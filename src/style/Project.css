@@ -1,0 +1,7 @@
+.project-container{
+    height: 200px;
+    width: 250px;
+    float: left;
+    background-color: salmon;
+    margin: 10px;
+}

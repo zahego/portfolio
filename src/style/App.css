@@ -1,0 +1,50 @@
+.navbar{
+  background-color:orange;
+  height: 50px;
+  margin-right: 10px;
+  width:100%;
+  position: relative;
+  top:0;
+  text-align: right;
+}
+
+
+.content >div, footer{
+  background-color:pink;
+  margin:1% 0;
+  height: 500px;
+  width:100%;
+  position: static;
+  z-index:1;
+  color: rgb(184, 24, 3);
+  padding: 10px;
+}
+
+.landing-bgImg {
+  background-position: 0 50%;
+  z-index: 2;
+  opacity: .2;
+  height: 500px;
+  width: 100%;
+  position:absolute;
+}
+.landing .landing-text{
+  z-index: 3;
+  opacity: 1 !important;
+  
+  top: 0;
+  position:relative;
+}
+
+.about-me .fontAwesome, .contact-me .fontAwesome{
+  padding-right:20px;
+}
+
+button{
+  height: 40px;
+  width: auto;
+  padding: 10px;
+  border-radius: 5%;
+  background-color: rgb(216, 174, 169);
+  color: rgb(61, 4, 4);
+}
