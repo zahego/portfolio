@@ -3,6 +3,7 @@ import React from 'react';
 export const WhyWorkWithMe=({characteristic})=>{
     return(
         <div className="why-work-with-me">
+            <section>
             <h1>Why work with me</h1>
             <h5>I am</h5>
             <ul>
@@ -14,6 +15,7 @@ export const WhyWorkWithMe=({characteristic})=>{
                     </li>)
                 })}
             </ul>
+            </section>
         </div>
     
     )

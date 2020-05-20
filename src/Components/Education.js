@@ -3,6 +3,7 @@ import React from 'react';
 export const Education=({eschool})=>{
     return(
         <div className="education" id="education">
+            <section>
             <h1>Education</h1>
             <h3>{eschool.name}</h3>
             <h5>{eschool.location}</h5>
@@ -13,6 +14,7 @@ export const Education=({eschool})=>{
                     )
                 })}
             </ul>
+            </section>
         </div>
     
     )

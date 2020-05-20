@@ -1,30 +1,71 @@
+
 .navbar{
-  background-color:orange;
+  background-color:rgb(240, 162, 16, 0.5);
   height: 50px;
-  margin-right: 10px;
   width:100%;
-  position: relative;
+  position: fixed;
+  z-index:5;
+  display:flex;
   top:0;
+  
+}
+.navbar ul{
+  display:flex;
+  list-style: none;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin:0;
+  
+  width:100%;
+}
+.navbar ul li{
+  margin: 1rem;
   text-align: right;
 }
+.navbar ul li a{
+  text-decoration: none;
+}
+.navbar ul li a:hover{
+  color: rgb(148, 160, 180);
+}
 
-
-.content >div, footer{
+.content section, footer{
+  height: 100vh;
   background-color:pink;
-  margin:1% 0;
-  height: 500px;
+  height: 100vh;
+  margin-bottom: 1rem;
   width:100%;
-  position: static;
+  position: relative;
   z-index:1;
   color: rgb(184, 24, 3);
-  padding: 10px;
+  display:inline-block;
+}
+.project section{
+  height: 120vh !important;
+  background-color:pink;
+  margin-bottom: 1rem;
+}
+.quick-summary section, .education section, .contact-me section{
+  height: 40vh !important;
+  background-color:pink;
+  margin-bottom: 1rem;
+}
+.why-work-with-me section, .about-me{
+  height: 60vh !important;
+  background-color:pink;
+  margin-bottom: 1rem;
+}
+.about-me{
+  margin-bottom: 0 !important;
 }
 
 .landing-bgImg {
-  background-position: 0 50%;
+  /*background-position: 0 10%;*/
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
   z-index: 2;
   opacity: .2;
-  height: 500px;
+  height: 100vh;
   width: 100%;
   position:absolute;
 }
@@ -47,4 +88,14 @@ button{
   border-radius: 5%;
   background-color: rgb(216, 174, 169);
   color: rgb(61, 4, 4);
+}
+h1, h3, h5, p{
+  padding-left:10px;
+}
+
+.bottomOfDiv{
+  bottom:5px;
+   position:absolute;
+  left:50%;
+  z-Index:4;
 }

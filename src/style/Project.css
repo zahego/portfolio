@@ -1,7 +1,33 @@
+:root{
+    --height:300px;
+    --height-image:160px;
+    --height-desc:97px;
+    --height-button:30px;
+    --width:280px;
+}
 .project-container{
-    height: 200px;
-    width: 250px;
+    height: var(--height);
+    width:  var(--width);
     float: left;
     background-color: salmon;
     margin: 10px;
+    position: relative;
+    text-align: center;
+    border-right: 1px solid rgb(51, 19, 19);
+    border-left: 1px solid rgb(51, 19, 19);
+    
 }
+.project-container img{
+    height: var(--height-image);
+    width: var(--width);
+}
+.project-container p{
+    margin: 0 0 0 0;
+    height: var(--height-desc);
+    
+}
+.project-container button{
+    width: 140px;
+    left:50%;
+    z-Index:4;
+  }
