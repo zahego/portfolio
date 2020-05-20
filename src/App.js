@@ -40,8 +40,12 @@ let database={
   characteristic: [{quality:"ambitious", des:"I am ambitious"},
                   {quality:"quick learner", des:"I can learn quick"},
                   {quality:"adaptable", des:"I can adapt fast"}],
-  school:{name:"sick ass University",grad:"Dec 2020", location: "Dangerous, Neighborhood, USA, 000000", 
-          corsework:["this and that","that and this"]},
+  school:{name:"Temple University",grad:"Dec 2020", location: "Philadelphia, PA, USA, 19122", 
+          corsework:["Data Structure and Algorithm", "Mobile Design and Prototype", "Web App Development", 
+                    "Mobile App Development", "Quality Assurance and Testing", "Software Design", 
+                    "Principles of Data Science", "Probability and Statistic", "Technical Writing", 
+                    "Final Project in Computer Science", "UI/UX design", "Software Security Development", 
+                    "Linear Algebra", "Calculus"]},
 };
 
 /*let database={
@@ -56,17 +60,28 @@ let database={
           corsework:["this and that","that and this"]},
 };*/
 
-
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("progress-bar").style.width = scrolled + "%";
+}
 class App extends React.Component {
+  componentDidMount(){
+    window.onscroll = function() {myFunction()};
+  }
+  componentDidUpdate(){
+    window.onscroll = function() {myFunction()};
+  }
   render(){
   return (
     <div className="app-body">
     <Navbar />
     <div className="content">
     <Landing ldname={database.fullname} ldtitle={database.title} ldquote={database.quote} ldpic='./Resources/edgy.png'/>
+    <QuickSummary qsname={database.firstName} qstitle={database.title}/>
     <Skill sskill1={database.skill} sskill2={database.skill2} sskill3={database.skill3}/>
     <Project />
-    <QuickSummary qsname={database.firstName} qstitle={database.title}/>
     <Education eschool={database.school}/>
     <WhyWorkWithMe characteristic={database.characteristic}/>
     <ContactMe />

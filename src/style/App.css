@@ -15,7 +15,7 @@
   justify-content: flex-end;
   flex-direction: row;
   margin:0;
-  
+  z-index: 7;
   width:100%;
 }
 .navbar ul li{
@@ -98,4 +98,12 @@ h1, h3, h5, p{
    position:absolute;
   left:50%;
   z-Index:4;
+}
+
+.progress-bar {
+  height: 50px;
+  background: #7e311a86;
+  width: 0%;
+  z-index: 6;
+  position: absolute;
 }

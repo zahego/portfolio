@@ -3,13 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandPointDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-scroll";
 
-var sectionStyle = {
+var flexContain = {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+    alignContent: 'center',
     display: "flex",
+    height: "100vh",
 }
-var divStyle = {
+var flexElement = {
     display: "flex",
     flexDirection: 'column',
     justifyContent: 'center',
@@ -24,20 +26,12 @@ export const Landing = ({ ldname, ldtitle, ldquote, ldpic }) => {
                 <div className="landing-bgImg" style={{ backgroundImage: `url(${require("../Resources/banner.png")})` }}></div>
 
                 {/*info-flex */}
-                <div style={sectionStyle}>
-                    <div className="landing-text" style={divStyle}>
+                <div style={flexContain}>
+                    <div className="landing-text" style={flexElement}>
                         {/*<img style={{backgroundImage:`url(${require("../Resources/edgy.png")})`}} alt="pic"></img>*/}
-                        <h1>{ldname}</h1>
+                        <h1 style={{fontSize:"80px", margin:"0"}}>{ldname}</h1>
                         <h3>{ldtitle}</h3>
                         <p>{ldquote}</p>
-
-                    </div>
-                    <div className="landing-text" style={divStyle}>
-                        {/*<img style={{backgroundImage:`url(${require("../Resources/edgy.png")})`}} alt="pic"></img>*/}
-                        <h1>{ldname}</h1>
-                        <h3>{ldtitle}</h3>
-                        <p>{ldquote}</p>
-                        
 
                     </div>
                 </div>
