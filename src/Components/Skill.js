@@ -12,66 +12,82 @@ var sectionStyle={
       flexDirection:'column',
   }
   
+  var gridMidContainer={
+    display:"grid",
+    gridTemplateRow: "40% 40%",
+    gridGap: "1em",
+    gridAutoRows: "minmax(100px, auto)",
+}
+  
+  
 export const Skill=({sskill1, sskill2, sskill3})=>{
     return(
         <div className="skill" id="skill">
-            <section>
+            <section >
+                <div style={{paddingLeft:"20px", paddingTop: "40px"}}>
             <h1>My skill stack</h1>
-            <h5>I love to learn new technologies. Especially the one's that manke your company special</h5>
-            <div style={sectionStyle}>
-            <ul style={divStyle}>
-                <h3>Web tech</h3>
+            <p>I love to learn new technologies. Especially the one's that manke your company special</p>
+            </div>
+
+            <div className="gridContainer">
+            <div>
+            <h3>Web tech</h3>
+            <ul className="gridItems">
             {sskill1.map((s, id)=>{
-               if(typeof s.icon!=='string'){
+           if(typeof s.icon!=='string'){
+            return(
+                <li key={id}><h6>{s.name} <FontAwesomeIcon icon={s.icon} size="lg" /></h6> </li>
+            
+            )}
+            else{
                 return(
-                    <li key={id}>{s.name}:<FontAwesomeIcon icon={s.icon} size="lg" /></li>
+                    <li key={id}><b>{s.name}</b>  {s.icon}</li>
                 
                 )}
-                else{
-                    return(
-                        <li key={id}>{s.name}:{s.icon}</li>
-                    
-                    )}
-                    })}
+                })}
+
             </ul>
-            <ul style={divStyle}>
+            </div>
+
+            <div className="gridMidContent">
+                <div>
             <h3>Software tech</h3>
+            <ul className="gridItems">
             {sskill2.map((s, id)=>{
                 if(typeof s.icon!=='string'){
-                return(
-                    <li key={id}>{s.name}:<FontAwesomeIcon icon={s.icon} size="lg" /></li>
-                
-                )}
-                else{
                     return(
-                        <li key={id}>{s.name}:{s.icon}</li>
-                    
-                    )}
-                    })}
-
-
-            {/*{sskill2.map((s, id)=>{
-                return(
-                    <li key={id}>{s.name}:<FontAwesomeIcon icon={s.icon as IconName} size="lg" /></li>
-                /*<li key={id}>{s.name}:{s.icon}</li>*/
-                /*)
-            })}*/}
-            </ul>
-            <ul style={divStyle}>
-            <h3>Softskill</h3>
-            {sskill3.map((s, id)=>{
-                if(typeof s.icon!=='string'){
-                    return(
-                        <li key={id}>{s.name}:<FontAwesomeIcon icon={s.icon} size="lg" /></li>
+                        <li key={id}><h6>{s.name} <FontAwesomeIcon icon={s.icon} size="lg" /></h6> </li>
                     
                     )}
                     else{
                         return(
-                            <li key={id}>{s.name}:{s.icon}</li>
+                            <li key={id}><b>{s.name}</b>  {s.icon}</li>
                         
                         )}
                         })}
+        
+
             </ul>
+            </div>
+            <div>
+            <h3>Softskill</h3>
+            <ul className="gridItems">
+            {sskill3.map((s, id)=>{
+                if(typeof s.icon!=='string'){
+                    return(
+                        <li key={id}><h6>{s.name} <FontAwesomeIcon icon={s.icon} size="lg" /></h6> </li>
+                    
+                    )}
+                    else{
+                        return(
+                            <li key={id}><b>{s.name}</b>  {s.icon}</li>
+                        
+                        )}
+                        })}
+        
+            </ul>
+            </div>
+            </div>
             </div>
             </section>
         </div>

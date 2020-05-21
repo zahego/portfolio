@@ -1,7 +1,7 @@
 :root{
-    --height:300px;
-    --height-image:160px;
-    --height-desc:97px;
+    --height:340px;
+    --height-image:180px;
+    --height-desc:118px;
     --height-button:30px;
     --width:280px;
 }
@@ -9,7 +9,7 @@
     height: var(--height);
     width:  var(--width);
     float: left;
-    background-color: salmon;
+    background-color: var( --color-lighter);
     margin: 10px;
     position: relative;
     text-align: center;
@@ -28,6 +28,21 @@
 }
 .project-container button{
     width: 140px;
+    height:40px;
     left:50%;
     z-Index:4;
+    margin:0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    display: inline-block;
   }
+
+.project-container img:hover{
+    opacity: 0.2;
+}
+.project-container .fontAwesomeEye{
+    position: absolute;
+    left:35%;
+    top: 15%;
+    visibility:hidden;
+}

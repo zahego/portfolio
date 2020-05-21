@@ -9,7 +9,7 @@ var flexContain2 = {
     flexDirection: 'row',
     display: "flex",
     justifyContent: 'space-between',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     flexWrap:"wrap",
     margin: "0 10px",
 }
@@ -18,13 +18,14 @@ export const Education=({eschool})=>{
         <div className="education" id="education">
             <section>
                 <div style={flexContain2}>
-                    <div>
+                    <div style={{paddingLeft:"20px", paddingTop: "60px"}}>
             <h1>Education</h1>
             <h3>{eschool.name}</h3>
             <h5>{eschool.location}</h5>
             </div>
-            <img src={require('../Resources/temple.png')} style={{width:"400px", height:"100px", opacity:"0.5"}} alt="temple.png"></img>
-            </div>
+            <img src={require('../Resources/temple.png')} style={{width:"400px", height:"100px", opacity:"0.5", paddingRight:"40px"}} alt="temple.png"></img>
+            </div >
+            <div style={{ paddingTop: "60px"}}>
             <ul style={flexContain1}>
                 {eschool.corsework.map((c,id)=>{
                     return(
@@ -32,6 +33,7 @@ export const Education=({eschool})=>{
                     )
                 })}
             </ul>
+            </div>
             </section>
         </div>
     

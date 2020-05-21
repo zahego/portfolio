@@ -1,0 +1,39 @@
+
+.skill li{
+    background-color:rgb(247, 184, 66);
+    border: 1px solid rgb(185, 190, 190);
+    color: rgb(114, 10, 10);
+    padding: 10px 5px;
+    text-align: center;
+    width:200px;
+}
+.skill li:hover{
+    background-color:var(--color-lighter);
+    border: 1px solid rgb(114, 10, 10);
+    color: rgb(223, 82, 0);
+}
+.skill h3{
+    text-align: center;
+}
+.gridContainer{
+    display:grid;
+    grid-template-columns: 50% 48%;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+}
+.gridMidContent{
+    display:grid;
+    grid-template-rows: 40% 40%;
+    grid-row-gap: 3em;
+    grid-auto-rows: minmax(100px, auto);
+}
+.gridItemsStyle1{
+    display:grid;
+    grid-template-columns: 33% 33% 33% ;
+    grid-gap: 1em;
+}
+.gridItems{
+    display:grid;
+    grid-template-columns: 33% 33% 33% ;
+    grid-gap: 1em;
+}

@@ -2,11 +2,12 @@ import React from 'react';
 var flexContain = {
     flexDirection: 'row',
     display: "flex",
-    height: "100vh",
     justifyContent: 'space-between',
+    alignItems: 'center',
+    height: '360px',
 }
 var flexElement = {
-    paddingLeft: '10px',
+    paddingLeft: '20px',
 }
 export const QuickSummary=({qsname, qstitle})=>{
     return(

@@ -1,6 +1,9 @@
 import React from 'react';
 import './style/App.css';
 import './style/Project.css';
+import './style/Skill.css';
+import './style/Landing.css';
+import './style/Navbar.css';
 import { Navbar } from './Components/Navbar';
 import { Landing } from './Components/Landing';
 import { Skill } from './Components/Skill';
@@ -38,13 +41,13 @@ let database = {
           trueQuote:"Society is ruled by one, but built by many."},
   skill: [{ name: "HTML", icon: faHtml5 }, { name: "CSS", icon: faCss3 }, { name: "Javascript", icon: faJs },
   { name: "Vue", icon: faVuejs }, { name: "React", icon: faReact }, { name: "Nodejs", icon: faNodeJs },
-  { name: "Struts2", icon: "S" }, { name: "Spring MVC", icon: "S" }, { name: "Hibernate", icon: "H" },
-  { name: "JSP", icon: "J" }, { name: "MySQL", icon: "M" }, { name: "REST", icon: "R" },
-  { name: "Apache", icon: "A" }, { name: "Glassfish", icon: "G" }, { name: "Tomcat", icon: "T" },
+  { name: "Struts2", icon: "" }, { name: "Spring MVC", icon: "" }, { name: "Hibernate", icon: "" },
+  { name: "JSP", icon: "" }, { name: "MySQL", icon: "" }, { name: "REST", icon: "" },
+  { name: "Apache", icon: "" }, { name: "Glassfish", icon: "" }, { name: "Tomcat", icon: "" },
   { name: "Axure", icon: faLayerGroup }, { name: "InVision", icon: faInvision }, { name: "Adobe XD", icon: faAdobe },
   { name: "UI/UX design", icon: faUserFriends }, { name: "Photoshop", icon: faMagic }, { name: "Selenium", icon: faCheck }],
 
-  skill2: [{ name: "Java", icon: faJava }, { name: "Python", icon: faPython }, { name: "C#", icon: "C#" },
+  skill2: [{ name: "Java", icon: faJava }, { name: "Python", icon: faPython }, { name: "C#", icon: "" },
   { name: "Unity", icon: faUnity }, { name: "Android Studio", icon: faAndroid }, { name: "MS Threat Model", icon: faMicrosoft }],
 
   skill3: [{ name: "Agile development", icon: faCalendarAlt }, { name: "Scrum", icon: faTrello }, { name: "Usability testing", icon: faClipboard },
@@ -69,7 +72,8 @@ let database = {
   {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"},
   {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"},
   {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"},
-  {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"}]
+  {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"}],
+  links:{github:"https://github.com/zahego/",linkedIn:"https://www.linkedin.com/in/minh-tran-302590139/",email:"tug70814@temple.edu", codepen:"https://codepen.io/zahego"}
 };
 
 
@@ -82,7 +86,7 @@ function myFunction() {
 class App extends React.Component {
   componentDidMount() {
     window.onscroll = function () { myFunction() };
-    console.log(database.quote.jokeQuote);
+    console.log(database.links.github);
   }
   componentDidUpdate() {
     window.onscroll = function () { myFunction() };
@@ -100,8 +104,8 @@ class App extends React.Component {
           
           <Education eschool={database.school} />
           <WhyWorkWithMe characteristic={database.characteristic} />
-          <ContactMe />
-          <AboutMe abname={database.fullname} abfname={database.firstName} abtitle={database.title}
+          <ContactMe cmlinks={database.links}/>
+          <AboutMe ablinks={database.links} abname={database.fullname} abfname={database.firstName} abtitle={database.title}
             abadress={database.address} abphone={database.phone} abemail={database.email} />
         </div>
       </div>

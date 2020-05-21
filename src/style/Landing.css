@@ -1,0 +1,17 @@
+.landing-bgImg {
+    /*background-position: 0 10%;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    z-index: 2;
+    opacity: .2;
+    height: 100vh;
+    width: 100%;
+    position:absolute;
+  }
+  .landing .landing-text{
+    z-index: 3;
+    opacity: 1 !important;
+    
+    top: 0;
+    position:relative;
+  }

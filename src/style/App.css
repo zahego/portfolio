@@ -1,40 +1,19 @@
+:root{
+  --color-primary-bold: rgb(86,48,63);
+  --color-primary: rgb(216,120,159);
+  --color-light: rgb(251,241,245);
+  --color-secondary: rgb(204,177,17);
+  --color-secondary-light: rgb(224,208,112);
 
-.navbar{
-  background-color:rgb(240, 162, 16, 0.5);
-  height: 50px;
-  width:100%;
-  position: fixed;
-  z-index:5;
-  display:flex;
-  top:0;
-  
+  --color-primary-sub: rgb(195,33,66);
+  --color-dark: rgb(60,41,41);
+  --color-darker: rgb(15,13,13);
+  --color-light: rgb(194, 167, 142);
+  --color-lighter: rgb(225,210,192);
 }
-.navbar ul{
-  display:flex;
-  
-  justify-content: flex-end;
-  flex-direction: row;
-  margin:0;
-  z-index: 7;
-  width:100%;
-}
-ul{
-  list-style: none;
-}
-.navbar ul li{
-  margin: 1rem;
-  text-align: right;
-}
-.navbar ul li a{
-  text-decoration: none;
-}
-.navbar ul li a:hover{
-  color: rgb(148, 160, 180);
-}
-
 .content section, footer{
   height: 100vh;
-  background-color:pink;
+  background-color:var(--color-light);
   height: 100vh;
   margin-bottom: 1rem;
   width:100%;
@@ -44,72 +23,59 @@ ul{
   display:inline-block;
 }
 .project section{
-  height: 120vh !important;
-  background-color:pink;
+  height: 145vh !important;
+  background-color:var(--color-light);
   margin-bottom: 1rem;
 }
 .quick-summary section, .education section, .contact-me section{
   height: 40vh !important;
-  background-color:pink;
+  background-color:var(--color-light);
   margin-bottom: 1rem;
 }
 .why-work-with-me section, .about-me{
   height: 60vh !important;
-  background-color:pink;
+  background-color:var(--color-light);
   margin-bottom: 1rem;
 }
 .about-me{
   margin-bottom: 0 !important;
 }
-
-.landing-bgImg {
-  /*background-position: 0 10%;*/
-  background-repeat: no-repeat;
-  background-size: 100% 100vh;
-  z-index: 2;
-  opacity: .2;
-  height: 100vh;
-  width: 100%;
-  position:absolute;
-}
-.landing .landing-text{
-  z-index: 3;
-  opacity: 1 !important;
-  
-  top: 0;
-  position:relative;
+.about-me div{
+  padding-left:20px;
+  padding-top:40px;
 }
 
-.about-me .fontAwesome, .contact-me .fontAwesome{
-  padding-right:20px;
-}
 
 button{
-  height: 40px;
+  height: 50px;
   width: auto;
   padding: 10px;
   border-radius: 5%;
-  background-color: rgb(216, 174, 169);
+  background-color: rgb(224, 104, 34);;
+  color: rgb(240, 240, 240);
+  margin:5px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: rgb(186, 193, 204);
   color: rgb(61, 4, 4);
+  font-size: 14px;
 }
-h1, h3, h5, p{
-  padding-left:10px;
-}
+
 
 .bottomOfDiv{
   bottom:5px;
    position:absolute;
   left:50%;
+  text-align: center;
   z-Index:4;
 }
-
-.progress-bar {
-  height: 50px;
-  background: #7e311a86;
-  width: 0%;
-  z-index: 6;
-  position: absolute;
+#bottomDivForText{
+  left:45%;
 }
 h1, h2, h3, h4, h5, h6, p{
   margin: 3px;
+}
+ul{
+  list-style: none;
 }

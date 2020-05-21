@@ -9,19 +9,19 @@ var flexContain = {
     alignItems: 'center',
     margin: "0 10px",
 }
-export const ContactMe=()=>{
+export const ContactMe=({cmlinks})=>{
     return(
         <div className="contact-me" id="contact-me">
             <section>
                 <div style={flexContain}>
                 <div>
             <h1>Connect with me:</h1>
-            <h5>You can connect with me through these medium:</h5>
-            <div style={{paddingLeft:"10px"}}>
-            <FontAwesomeIcon icon={faGithubAlt} size="2x" className="fontAwesome"/>
-            <FontAwesomeIcon icon={faLinkedin} size="2x" className="fontAwesome"/>
-            <FontAwesomeIcon icon={faEnvelope} size="2x" className="fontAwesome"/>
-            <FontAwesomeIcon icon={faCodepen} size="2x" className="fontAwesome"/>
+            <p>You can connect with me through these medium:</p>
+            <div>
+            <a href={cmlinks.github}><button><FontAwesomeIcon icon={faGithubAlt} size="2x" className="fontAwesome"/></button></a>
+            <a href={cmlinks.linkedIn}><button><FontAwesomeIcon icon={faLinkedin} size="2x" className="fontAwesome"/></button></a>
+            <a href={cmlinks.email}><button><FontAwesomeIcon icon={faEnvelope} size="2x" className="fontAwesome"/></button></a>
+            <a href={cmlinks.codepen}><button><FontAwesomeIcon icon={faCodepen} size="2x" className="fontAwesome"/></button></a>
             </div>
             </div>
             <img src={require('../Resources/connection.png')} style={{width:"500px", height:"300px", opacity:"0.5"}} alt="contact.png"></img>

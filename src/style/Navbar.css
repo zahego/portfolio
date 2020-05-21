@@ -1,0 +1,39 @@
+.navbar{
+    background-color:rgb(240, 162, 16, 0.5);
+    height: 50px;
+    width:100%;
+    position: fixed;
+    z-index:5;
+    display:flex;
+    top:0;
+    
+  }
+  .navbar ul{
+    display:flex;
+    
+    justify-content: flex-end;
+    flex-direction: row;
+    margin:0;
+    z-index: 7;
+    width:100%;
+  }
+  .navbar ul li{
+    margin: 1rem;
+    text-align: right;
+    color: rgb(44, 58, 42);
+  }
+  .navbar ul li a{
+    text-decoration: none;
+    color: rgb(44, 58, 42);
+  }
+  .navbar ul li a:hover{
+    color: rgb(148, 160, 180);
+    cursor: pointer;
+  }
+  .progress-bar {
+    height: 50px;
+    background: #7e311a86;
+    width: 0%;
+    z-index: 6;
+    position: absolute;
+  }

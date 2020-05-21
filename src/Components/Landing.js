@@ -37,7 +37,7 @@ export const Landing = ({ ldname, ldtitle, ldquote, ldpic }) => {
                     </div>
                 </div>
                 {/*a button to show you can scroll down*/}
-                <div className="bottomOfDiv">
+                <div className="bottomOfDiv" style={{cursor:"pointer"}}>
                 <Link activeClass="active" to="skill" smooth={true} spy={true} offset={-70} duration={500}>
                 <FontAwesomeIcon icon={faHandPointDown} size="4x" className="fontAwesome" />
                 </Link>
