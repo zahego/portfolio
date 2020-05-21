@@ -8,33 +8,23 @@ var sectionStyle = {
     flexWrap: 'wrap',
     width: '90%',
 }
-var divStyle = {
-    display: "flex",
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexWrap: 'wrap',
-}
 
-export const Project=({name, pic, link})=>{
+export const Project=({pproject})=>{
     return(
         <div className="project" id="project">
             <section>
             <h1>My latest work</h1>
             <h5>Some of my greatest and latest work</h5>
             <p>Click on the project to see more info</p>
-            <div style={sectionStyle}>
+            <ul style={sectionStyle}>
+                {pproject.map((p,id)=>{
+                    return(
+                        <ProjectContainer pjcdesc={p.desc} pjcvisitlink={p.visitlink} pjccodelink={p.codelink}/>
+                    )
+                })}
             
-            <ProjectContainer />
-            <ProjectContainer />
-            <ProjectContainer />
-            <ProjectContainer />
-            <ProjectContainer />
-            <ProjectContainer />
-            <ProjectContainer />
-            <ProjectContainer />
             <div className="stopFloat"></div>
-            </div>
+            </ul>
             </section>
         </div>
     

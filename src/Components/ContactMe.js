@@ -24,7 +24,7 @@ export const ContactMe=()=>{
             <FontAwesomeIcon icon={faCodepen} size="2x" className="fontAwesome"/>
             </div>
             </div>
-            <img src={require('../Resources/connection.png')} style={{width:"500px", height:"300px", opacity:"0.5"}}></img>
+            <img src={require('../Resources/connection.png')} style={{width:"500px", height:"300px", opacity:"0.5"}} alt="contact.png"></img>
             
             </div>
             </section>

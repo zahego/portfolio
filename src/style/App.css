@@ -11,12 +11,15 @@
 }
 .navbar ul{
   display:flex;
-  list-style: none;
+  
   justify-content: flex-end;
   flex-direction: row;
   margin:0;
   z-index: 7;
   width:100%;
+}
+ul{
+  list-style: none;
 }
 .navbar ul li{
   margin: 1rem;
@@ -106,4 +109,7 @@ h1, h3, h5, p{
   width: 0%;
   z-index: 6;
   position: absolute;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 3px;
 }

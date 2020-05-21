@@ -1,9 +1,18 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 var flexContain = {
     flexDirection: 'row',
     display: "flex",
     justifyContent: 'space-evenly',
-    flexWrap:"wrap",
+    alignContent:"flex-end",
+    flex: "1",
+    flexBasis: "50px 50px",
+    height: "350px",
+}
+var flexItems={
+    textAlign:"center",
+    width: "300px",
+    height: "200px"
 }
 export const WhyWorkWithMe=({characteristic})=>{
     return(
@@ -14,9 +23,9 @@ export const WhyWorkWithMe=({characteristic})=>{
             <ul style={flexContain}>
                 {characteristic.map((c, id)=>{
                     return(
-                    <li key={id}>
-                        <p>icon{id}</p>
-                        <p>{c.quality}</p>
+                    <li key={id} style={flexItems}>
+                        <p><FontAwesomeIcon icon={c.icon} size="3x" /></p>
+                        <h3>{c.quality}</h3>
                         <p>{c.des}</p>
                     </li>)
                 })}

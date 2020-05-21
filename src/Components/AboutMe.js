@@ -19,7 +19,10 @@ export const AboutMe=({abname, abfname, abtitle, abadress, abphone, abemail})=>{
             <p>Adress: {abadress}</p>
             <p>Phone: {abphone}</p>
             <p>Email: {abemail}</p>
-            <h5 className="bottomOfDiv">@2020 by {abname}</h5>
+            <div className="bottomOfDiv">
+            <h5 >@2020 by {abname}</h5>
+            <h6 >made with React and fontAwesome</h6>
+            </div>
         </footer>
     
     )

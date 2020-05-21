@@ -31,7 +31,8 @@ export const Landing = ({ ldname, ldtitle, ldquote, ldpic }) => {
                         {/*<img style={{backgroundImage:`url(${require("../Resources/edgy.png")})`}} alt="pic"></img>*/}
                         <h1 style={{fontSize:"80px", margin:"0"}}>{ldname}</h1>
                         <h3>{ldtitle}</h3>
-                        <p>{ldquote}</p>
+                        <p style={{textDecoration:"line-through", margin:"0"}}>{ldquote.jokeQuote}</p>
+                        <p style={{ margin:"0"}}>"{ldquote.trueQuote}"-<b>King Tut</b></p>
 
                     </div>
                 </div>

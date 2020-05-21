@@ -23,7 +23,7 @@ export const Education=({eschool})=>{
             <h3>{eschool.name}</h3>
             <h5>{eschool.location}</h5>
             </div>
-            <img src={require('../Resources/temple.png')} style={{width:"500px", height:"120px", opacity:"0.5"}}></img>
+            <img src={require('../Resources/temple.png')} style={{width:"400px", height:"100px", opacity:"0.5"}} alt="temple.png"></img>
             </div>
             <ul style={flexContain1}>
                 {eschool.corsework.map((c,id)=>{

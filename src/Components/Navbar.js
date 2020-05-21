@@ -6,7 +6,7 @@ import { faSave } from '@fortawesome/free-solid-svg-icons';
 export const Navbar=()=>{
     return(
         <header className="navbar">
-            <div class="progress-bar" id="progress-bar"></div>
+            <div className="progress-bar" id="progress-bar"></div>
             <ul>
             <li style={{alignItems:"flex-start", flex:"2",marginTop:"0"}}>< a href="./index.html"><img src={require('../Resources/logo-brand.png')} style={{ height:"50px", width:"auto"}} alt="banner"/></a></li>
             <li><Link activeClass="active" to="skill" smooth={true} spy={true} offset={-70} duration={500}>skill</Link></li>

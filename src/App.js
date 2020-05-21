@@ -1,64 +1,77 @@
 import React from 'react';
 import './style/App.css';
 import './style/Project.css';
-import {Navbar} from './Components/Navbar';
-import {Landing} from './Components/Landing';
-import {Skill} from './Components/Skill';
-import {Project} from './Components/Project';
-import {QuickSummary} from './Components/QuickSummary';
-import {Education} from './Components/Education';
-import {WhyWorkWithMe} from './Components/WhyWorkWithMe';
-import {ContactMe} from './Components/ContactMe';
-import {AboutMe} from './Components/AboutMe';
+import { Navbar } from './Components/Navbar';
+import { Landing } from './Components/Landing';
+import { Skill } from './Components/Skill';
+import { Project } from './Components/Project';
+import { QuickSummary } from './Components/QuickSummary';
+import { Education } from './Components/Education';
+import { WhyWorkWithMe } from './Components/WhyWorkWithMe';
+import { ContactMe } from './Components/ContactMe';
+import { AboutMe } from './Components/AboutMe';
+import {
+  faUserFriends, faCheck,
+  faClipboard, faCalendarAlt, faCalculator,
+  faLock, faTape, faEdit,
+  faLayerGroup, faMagic, 
+  faArrowAltCircleUp, faFastForward, faArrowsAlt
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faHtml5, faCss3, faJs, faVuejs, faReact, faNodeJs,
+  faJava, faPython, faUnity, faAndroid, faMicrosoft,
+  faTrello, faArtstation, faAdobe, faGithub,
+  faInvision
+} from '@fortawesome/free-brands-svg-icons';
 
 
 
-let database={
-  fullname:"Minh Tran",
-  firstName:"Minh", 
+let database = {
+  fullname: "Minh Tran",
+  firstName: "Minh",
   title: "Full-stack software develper",
   email: "tug70814@temple.edu",
   address: "2238 N Park Ave, Philadelphia, PA, USA, 19132",
-  phone:"267-251-2752",
+  phone: "267-251-2752",
 
-  quote: "If you can do HTML,you can do CSS. Believe in yourself or sth...",
-  skill: [{name:"HTML", icon:"H"},{name:"CSS", icon:"C"},{name:"Javascript", icon:"J"},
-          {name:"Vue", icon:"V"},{name:"React", icon:"R"},{name:"Nodejs", icon:"N"},
-          {name:"Struts2", icon:"S"},{name:"Spring MVC", icon:"S"},{name:"Hibernate", icon:"H"},
-          {name:"JSP", icon:"J"},{name:"MySQL", icon:"M"},{name:"REST", icon:"R"},
-          {name:"Apache", icon:"A"},{name:"Glassfish", icon:"G"},{name:"Tomcat", icon:"T"},
-          {name:"Axure", icon:"A"},{name:"InVision", icon:"I"},{name:"Adobe XD", icon:"A"},
-          {name:"UI/UX design", icon:"U"},{name:"Photoshop", icon:"P"},{name:"Selenium", icon:"S"}],
+  quote: {jokeQuote:"If you can do Java,you can do Javscript. Believe in yourself or sth...",
+          trueQuote:"Society is ruled by one, but built by many."},
+  skill: [{ name: "HTML", icon: faHtml5 }, { name: "CSS", icon: faCss3 }, { name: "Javascript", icon: faJs },
+  { name: "Vue", icon: faVuejs }, { name: "React", icon: faReact }, { name: "Nodejs", icon: faNodeJs },
+  { name: "Struts2", icon: "S" }, { name: "Spring MVC", icon: "S" }, { name: "Hibernate", icon: "H" },
+  { name: "JSP", icon: "J" }, { name: "MySQL", icon: "M" }, { name: "REST", icon: "R" },
+  { name: "Apache", icon: "A" }, { name: "Glassfish", icon: "G" }, { name: "Tomcat", icon: "T" },
+  { name: "Axure", icon: faLayerGroup }, { name: "InVision", icon: faInvision }, { name: "Adobe XD", icon: faAdobe },
+  { name: "UI/UX design", icon: faUserFriends }, { name: "Photoshop", icon: faMagic }, { name: "Selenium", icon: faCheck }],
 
-  skill2: [{name:"Java", icon:"J"},{name:"Python", icon:"P"},{name:"C#", icon:"C"},
-           {name:"Unity", icon:"U"},{name:"Android Studio", icon:"A"},{name:"MS Threat Model", icon:"M"}],
+  skill2: [{ name: "Java", icon: faJava }, { name: "Python", icon: faPython }, { name: "C#", icon: "C#" },
+  { name: "Unity", icon: faUnity }, { name: "Android Studio", icon: faAndroid }, { name: "MS Threat Model", icon: faMicrosoft }],
 
-  skill3: [{name:"Agile development", icon:"A"},{name:"Scrum", icon:"Trello and Agile central"},{name:"Usability testing", icon:"U"},
-           {name:"Digital Art", icon:"D"},{name:"Version Control", icon:"Git, sourcetree and bitbucket"},{name:"Software Security", icon:"S"},
-           {name:"Software Testing", icon:"Junit"},{name:"Application Prototyping", icon:"MArvel pop"},{name:"MAchine learning", icon:"M"},],
+  skill3: [{ name: "Agile development", icon: faCalendarAlt }, { name: "Scrum", icon: faTrello }, { name: "Usability testing", icon: faClipboard },
+  { name: "Digital Art", icon: faArtstation }, { name: "Version Control", icon: faGithub }, { name: "Software Security", icon: faLock },
+  { name: "Software Testing", icon: faEdit }, { name: "Application Prototyping", icon: faTape }, { name: "MAchine learning", icon: faCalculator },],
 
-  characteristic: [{quality:"ambitious", des:"I am ambitious"},
-                  {quality:"quick learner", des:"I can learn quick"},
-                  {quality:"adaptable", des:"I can adapt fast"}],
-  school:{name:"Temple University",grad:"Dec 2020", location: "Philadelphia, PA, USA, 19122", 
-          corsework:["Data Structure and Algorithm", "Mobile Design and Prototype", "Web App Development", 
-                    "Mobile App Development", "Quality Assurance and Testing", "Software Design", 
-                    "Principles of Data Science", "Probability and Statistic", "Technical Writing", 
-                    "Final Project in Computer Science", "UI/UX design", "Software Security Development", 
-                    "Linear Algebra", "Calculus"]},
+  characteristic: [{ icon: faArrowAltCircleUp,quality: "ambitious", des: "I'm not afraid to aim high. Everywhere I go, I would like to make myself known for being able to improve for the better." },
+  { icon: faFastForward,quality: "quick learner", des: "I'm confident in my ability to catch up and reapply my understanding into the craft." },
+  { icon: faArrowsAlt ,quality: "adaptable", des: "I pride myself as someone who expand by generalization. I like to learn the new stacks and in the process of learning, I figure my ability to adapt could become of good use." }],
+  school: {
+    name: "Temple University", grad: "Dec 2020", location: "Philadelphia, PA, USA, 19122",
+    corsework: ["Data Structure and Algorithm", "Mobile Design and Prototype", "Web App Development",
+      "Mobile App Development", "Quality Assurance and Testing", "Software Design",
+      "Principles of Data Science", "Probability and Statistic", "Technical Writing",
+      "Final Project in Computer Science", "UI/UX design", "Software Security Development",
+      "Linear Algebra", "Calculus"]
+  },
+  project:[{desc: "A website I made with pure HTML, CSS and JS both front-end and back-end", visitlink: "http://cis-linux2.temple.edu:8080/SP20_3308_tug70814/", codelink: "https://github.com/zahego/Buggit"},
+  {desc: "Another website I made with pure HTML, CSS and JS both front-end and back-end", visitlink: "http://cis-linux2.temple.edu:8080/FA18_3308_tug70814/", codelink: "https://github.com/zahego/SAD"},
+  {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"},
+  {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"},
+  {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"},
+  {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"},
+  {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"},
+  {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/"}]
 };
 
-/*let database={
-  fullname:"Minh Tran",
-  firstName:"Minh", 
-  title: "Fullstack Software Developer",
-  skill: [{name:"HTML", icon:"H"},{name:"CSS", icon:"C"},{name:"Javascript", icon:"J"}],
-  characteristic: [{quality:"ambitious", des:"I am ambitious"},
-                  {quality:"quick learner", des:"I can learn quick"},
-                  {quality:"adaptable", des:"I can adapt fast"}],
-  school:{name:"Temple University",grad:"Dec 2020", location: "Philadelphia, PA, USA, 19122", 
-          corsework:["this and that","that and this"]},
-};*/
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -67,29 +80,32 @@ function myFunction() {
   document.getElementById("progress-bar").style.width = scrolled + "%";
 }
 class App extends React.Component {
-  componentDidMount(){
-    window.onscroll = function() {myFunction()};
+  componentDidMount() {
+    window.onscroll = function () { myFunction() };
+    console.log(database.quote.jokeQuote);
   }
-  componentDidUpdate(){
-    window.onscroll = function() {myFunction()};
+  componentDidUpdate() {
+    window.onscroll = function () { myFunction() };
   }
-  render(){
-  return (
-    <div className="app-body">
-    <Navbar />
-    <div className="content">
-    <Landing ldname={database.fullname} ldtitle={database.title} ldquote={database.quote} ldpic='./Resources/edgy.png'/>
-    <QuickSummary qsname={database.firstName} qstitle={database.title}/>
-    <Skill sskill1={database.skill} sskill2={database.skill2} sskill3={database.skill3}/>
-    <Project />
-    <Education eschool={database.school}/>
-    <WhyWorkWithMe characteristic={database.characteristic}/>
-    <ContactMe />
-    <AboutMe abname={database.fullname} abfname={database.firstName} abtitle={database.title} 
-              abadress={database.address} abphone={database.phone} abemail={database.email}/>
-    </div>
-    </div>
-  );
+  
+  render() {
+    return (
+      <div className="app-body">
+        <Navbar />
+        <div className="content">
+          <Landing ldname={database.fullname} ldtitle={database.title} ldquote={database.quote} ldpic='./Resources/edgy.png'/>
+          <QuickSummary qsname={database.firstName} qstitle={database.title} />
+          <Skill sskill1={database.skill} sskill2={database.skill2} sskill3={database.skill3} />
+          <Project pproject={database.project}/>
+          
+          <Education eschool={database.school} />
+          <WhyWorkWithMe characteristic={database.characteristic} />
+          <ContactMe />
+          <AboutMe abname={database.fullname} abfname={database.firstName} abtitle={database.title}
+            abadress={database.address} abphone={database.phone} abemail={database.email} />
+        </div>
+      </div>
+    );
   }
 }
 
