@@ -11,7 +11,6 @@ var flexContain2 = {
     justifyContent: 'space-between',
     alignItems: 'flex-end',
     flexWrap:"wrap",
-    margin: "0 10px",
 }
 export const Education=({eschool})=>{
     return(

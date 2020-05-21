@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     z-index: 2;
-    opacity: .2;
+    opacity: .8;
     height: 100vh;
     width: 100%;
     position:absolute;
@@ -11,7 +11,13 @@
   .landing .landing-text{
     z-index: 3;
     opacity: 1 !important;
-    
+    color: var(--color-lighter);
     top: 0;
     position:relative;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--color-primary-sub);
+  }
+  .fontAwesomeLanding:hover{
+      color: var(--color-light);
+      background-color: var(--color-primary-sub);
   }

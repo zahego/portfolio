@@ -14,8 +14,8 @@ export const Navbar=()=>{
             <li><Link activeClass="active" to="education" smooth={true} spy={true} offset={-70} duration={500}>education</Link></li>
             <li><Link activeClass="active" to="contact-me" smooth={true} spy={true} offset={-70} duration={500}>contact</Link></li>
             <li><Link activeClass="active" to="about-me" smooth={true} spy={true} offset={-70} duration={500}>about me</Link></li>
-            <li><a href="resume">resume </a>
-            <FontAwesomeIcon icon={faSave} size="lg" className="fontAwesome" /></li>
+            <li><a href="resume">resume 
+            <FontAwesomeIcon icon={faSave} size="lg" className="fontAwesome" /></a></li>
             {/*<li ><a href="./index.html" style={{fontSize:'24px'}}>LOGO</a></li>
             <li><a href="#skill">skill</a></li>
             <li><a href="#project">project</a></li>

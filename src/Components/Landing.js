@@ -29,17 +29,17 @@ export const Landing = ({ ldname, ldtitle, ldquote, ldpic }) => {
                 <div style={flexContain}>
                     <div className="landing-text" style={flexElement}>
                         {/*<img style={{backgroundImage:`url(${require("../Resources/edgy.png")})`}} alt="pic"></img>*/}
-                        <h1 style={{fontSize:"80px", margin:"0"}}>{ldname}</h1>
-                        <h3>{ldtitle}</h3>
-                        <p style={{textDecoration:"line-through", margin:"0"}}>{ldquote.jokeQuote}</p>
-                        <p style={{ margin:"0"}}>"{ldquote.trueQuote}"-<b>King Tut</b></p>
+                        <h1 style={{fontSize:"90px", margin:"0"}}>{ldname}</h1>
+                        <h3 style={{fontSize:"25px", margin:"0"}}>{ldtitle}</h3>
+                        <p style={{textDecoration:"line-through", margin:"0", fontSize:"16"}}>{ldquote.jokeQuote}</p>
+                        <p style={{ margin:"0", fontSize:"16"}}>"{ldquote.trueQuote}"-<b>King Tut</b></p>
 
                     </div>
                 </div>
                 {/*a button to show you can scroll down*/}
                 <div className="bottomOfDiv" style={{cursor:"pointer"}}>
                 <Link activeClass="active" to="skill" smooth={true} spy={true} offset={-70} duration={500}>
-                <FontAwesomeIcon icon={faHandPointDown} size="4x" className="fontAwesome" />
+                <FontAwesomeIcon icon={faHandPointDown} size="4x" className="fontAwesomeLanding" />
                 </Link>
                 
                 </div>

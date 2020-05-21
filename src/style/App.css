@@ -1,7 +1,7 @@
 :root{
   --color-primary-bold: rgb(86,48,63);
   --color-primary: rgb(216,120,159);
-  --color-light: rgb(251,241,245);
+  --color-whitey: rgb(241, 236, 240);
   --color-secondary: rgb(204,177,17);
   --color-secondary-light: rgb(224,208,112);
 
@@ -15,7 +15,6 @@
   height: 100vh;
   background-color:var(--color-light);
   height: 100vh;
-  margin-bottom: 1rem;
   width:100%;
   position: relative;
   z-index:1;
@@ -24,22 +23,23 @@
 }
 .project section{
   height: 145vh !important;
-  background-color:var(--color-light);
-  margin-bottom: 1rem;
 }
 .quick-summary section, .education section, .contact-me section{
-  height: 40vh !important;
-  background-color:var(--color-light);
-  margin-bottom: 1rem;
+  height: 45vh !important;
 }
 .why-work-with-me section, .about-me{
   height: 60vh !important;
-  background-color:var(--color-light);
-  margin-bottom: 1rem;
 }
 .about-me{
   margin-bottom: 0 !important;
 }
+.project section, .quick-summary section,.why-work-with-me section, .about-me, .landing section{
+  background-color:var(--color-light);
+}
+.education section, .skill section, .contact-me section{
+  background-color:var(--color-lighter);
+}
+
 .about-me div{
   padding-left:20px;
   padding-top:40px;
@@ -47,10 +47,11 @@
 
 
 button{
-  height: 50px;
+  height: 40px;
   width: auto;
-  padding: 10px;
-  border-radius: 5%;
+  padding: 0 10px;
+  border:0;
+  border-radius: 3px;
   background-color: rgb(224, 104, 34);;
   color: rgb(240, 240, 240);
   margin:5px;
@@ -61,7 +62,9 @@ button:hover{
   color: rgb(61, 4, 4);
   font-size: 14px;
 }
-
+.quick-summary button{
+  width:47%;
+}
 
 .bottomOfDiv{
   bottom:5px;

@@ -55,7 +55,7 @@ let database = {
   { name: "Software Testing", icon: faEdit }, { name: "Application Prototyping", icon: faTape }, { name: "MAchine learning", icon: faCalculator },],
 
   characteristic: [{ icon: faArrowAltCircleUp,quality: "ambitious", des: "I'm not afraid to aim high. Everywhere I go, I would like to make myself known for being able to improve for the better." },
-  { icon: faFastForward,quality: "quick learner", des: "I'm confident in my ability to catch up and reapply my understanding into the craft." },
+  { icon: faFastForward,quality: "quick-learned", des: "I'm confident in my ability to catch up and reapply my understanding into the craft." },
   { icon: faArrowsAlt ,quality: "adaptable", des: "I pride myself as someone who expand by generalization. I like to learn the new stacks and in the process of learning, I figure my ability to adapt could become of good use." }],
   school: {
     name: "Temple University", grad: "Dec 2020", location: "Philadelphia, PA, USA, 19122",
@@ -101,7 +101,6 @@ class App extends React.Component {
           <QuickSummary qsname={database.firstName} qstitle={database.title} />
           <Skill sskill1={database.skill} sskill2={database.skill2} sskill3={database.skill3} />
           <Project pproject={database.project}/>
-          
           <Education eschool={database.school} />
           <WhyWorkWithMe characteristic={database.characteristic} />
           <ContactMe cmlinks={database.links}/>

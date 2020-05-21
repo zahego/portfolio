@@ -9,7 +9,7 @@
     height: var(--height);
     width:  var(--width);
     float: left;
-    background-color: var( --color-lighter);
+    background-color: var(--color-lighter);
     margin: 10px;
     position: relative;
     text-align: center;

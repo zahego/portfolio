@@ -7,7 +7,7 @@ var flexContain = {
     display: "flex",
     justifyContent: 'space-between',
     alignItems: 'center',
-    margin: "0 10px",
+    margin: "20px 20px",
 }
 export const ContactMe=({cmlinks})=>{
     return(
@@ -24,7 +24,7 @@ export const ContactMe=({cmlinks})=>{
             <a href={cmlinks.codepen}><button><FontAwesomeIcon icon={faCodepen} size="2x" className="fontAwesome"/></button></a>
             </div>
             </div>
-            <img src={require('../Resources/connection.png')} style={{width:"500px", height:"300px", opacity:"0.5"}} alt="contact.png"></img>
+            <img src={require('../Resources/connection.png')} style={{width:"500px", height:"320px", opacity:"0.5"}} alt="contact.png"></img>
             
             </div>
             </section>

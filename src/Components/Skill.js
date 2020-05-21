@@ -1,23 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-var sectionStyle={  
-    flexDirection:'row',
-    justifyContent:'space-evenly',
-    display:"flex", 
-    flexWrap:"wrap",
-  }
-  var divStyle={
-      display:"flex", 
-      flexDirection:'column',
-  }
-  
-  var gridMidContainer={
-    display:"grid",
-    gridTemplateRow: "40% 40%",
-    gridGap: "1em",
-    gridAutoRows: "minmax(100px, auto)",
-}
+
   
   
 export const Skill=({sskill1, sskill2, sskill3})=>{
