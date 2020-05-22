@@ -35,14 +35,14 @@
     padding-top: 5px;
     padding-bottom: 10px;
     display: inline-block;
+    position: absolute;
   }
 
-.project-container img:hover{
-    opacity: 0.2;
-}
 .project-container .fontAwesomeEye{
     position: absolute;
     left:35%;
     top: 15%;
-    visibility:hidden;
+    color: rgba(255, 255, 255, 0.705);
+    /*visibility:hidden;*/
+    
 }

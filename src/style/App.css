@@ -22,7 +22,7 @@
   display:inline-block;
 }
 .project section{
-  height: 145vh !important;
+  height: 100vh !important;
 }
 .quick-summary section, .education section, .contact-me section{
   height: 45vh !important;

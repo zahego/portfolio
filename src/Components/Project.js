@@ -23,7 +23,7 @@ export const Project=({pproject})=>{
             <ul style={sectionStyle}>
                 {pproject.map((p,id)=>{
                     return(
-                        <ProjectContainer pjcdesc={p.desc} pjcvisitlink={p.visitlink} pjccodelink={p.codelink} key={id}/>
+                        <ProjectContainer pjcdesc={p.desc} pjcvisitlink={p.visitlink} pjccodelink={p.codelink} pjcpic={p.projectpic} key={id}/>
                     )
                 })}
             

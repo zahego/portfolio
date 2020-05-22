@@ -9,7 +9,7 @@ var flexContain = {
 var flexElement = {
     paddingLeft: '20px',
 }
-export const QuickSummary=({qsname, qstitle})=>{
+export const QuickSummary=({qsname, qstitle, qspic})=>{
     return(
         <div className="quick-summary">
             <section>
@@ -22,7 +22,7 @@ export const QuickSummary=({qsname, qstitle})=>{
             <a href="#project"><button>Check out my project</button></a>
             </div>
             <div style={flexElement}>
-                <img src={require('../Resources/logo-brand.png')} style={{width: "500px", height: "auto"}} alt="logo-brand.png"/>
+                <img src={qspic} style={{width: "500px", height: "auto"}} alt="logo-brand.png"/>
             </div>
             </div>
             </section>
