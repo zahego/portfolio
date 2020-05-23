@@ -20,11 +20,11 @@ export const ContactMe=({cmlinks})=>{
             <div>
             <a href={cmlinks.github}><button><FontAwesomeIcon icon={faGithubAlt} size="2x" className="fontAwesome"/></button></a>
             <a href={cmlinks.linkedIn}><button><FontAwesomeIcon icon={faLinkedin} size="2x" className="fontAwesome"/></button></a>
-            <a href={cmlinks.email}><button><FontAwesomeIcon icon={faEnvelope} size="2x" className="fontAwesome"/></button></a>
+            <button onClick={()=>window.alert(cmlinks.email)}><FontAwesomeIcon icon={faEnvelope} size="2x" className="fontAwesome"/></button>
             <a href={cmlinks.codepen}><button><FontAwesomeIcon icon={faCodepen} size="2x" className="fontAwesome"/></button></a>
             </div>
             </div>
-            <img src={require('../Resources/connection.png')} style={{width:"500px", height:"320px", opacity:"0.5"}} alt="contact.png"></img>
+            <img src={cmlinks.connectionpic} style={{width:"500px", height:"320px", opacity:"0.5"}} alt="contact.png"></img>
             
             </div>
             </section>

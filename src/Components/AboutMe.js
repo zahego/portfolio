@@ -15,7 +15,7 @@ export const AboutMe=({ablinks, abname, abfname, abtitle, abadress, abphone, abe
             <p>I enjoy doing Web Development and Digital Art on my free time. Check out my art portfolio: https://tug70814.wixsite.com/mysite</p>
             <a href={ablinks.github}><button><FontAwesomeIcon icon={faGithubAlt} size="2x" className="fontAwesome"/></button></a>
             <a href={ablinks.linkedIn}><button><FontAwesomeIcon icon={faLinkedin} size="2x" className="fontAwesome"/></button></a>
-            <a href={ablinks.email}><button><FontAwesomeIcon icon={faEnvelope} size="2x" className="fontAwesome"/></button></a>
+            <button onClick={()=>window.alert(ablinks.email)}><FontAwesomeIcon icon={faEnvelope} size="2x" className="fontAwesome"/></button>
             <a href={ablinks.codepen}><button><FontAwesomeIcon icon={faCodepen} size="2x" className="fontAwesome"/></button></a>
             <p>Adress: {abadress}</p>
             <p>Phone: {abphone}</p>

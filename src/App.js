@@ -37,6 +37,8 @@ let database = {
   address: "2238 N Park Ave, Philadelphia, PA, USA, 19132",
   phone: "267-251-2752",
   piclogo:require('./Resources/logo-brand.png'),
+  background:require('./Resources/banner.png'),
+  
 
   quote: {jokeQuote:"If you can do Java,you can do Javscript. Believe in yourself or sth...",
           trueQuote:"Society is ruled by one, but built by many."},
@@ -70,11 +72,8 @@ let database = {
   {desc: "Another website I made with pure HTML, CSS and JS both front-end and back-end. I focus more on the minor details of JSP API.", visitlink: "http://cis-linux2.temple.edu:8080/FA18_3308_tug70814/", codelink: "https://github.com/zahego/SAD", projectpic: require('./Resources/project2.png')},
   {desc: "A website made with Vue framework I learnt during a course at LinkedIn Learning", visitlink: "https://github.com/zahego/Vue101", codelink: "https://github.com/zahego/Vue101", projectpic: require('./Resources/project3.png')},
   {desc: "A game I create with a team following Agile Development principle for Capstone class", visitlink: "https://github.com/Capstone-Projects-2019-Fall/GestureControlGame---MagicHands", codelink: "https://github.com/Capstone-Projects-2019-Fall/GestureControlGame---MagicHands", projectpic: require('./Resources/project4.png')},
-  /*{desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/", projectpic: require('./Resources/projectDefault.png')},
-  {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/", projectpic: require('./Resources/projectDefault.png')},
-  {desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/", projectpic: require('./Resources/projectDefault.png')},
-{desc: "test subject", visitlink: "http://google.com", codelink: "https://github.com/", projectpic: require('./Resources/projectDefault.png')}*/],
-  links:{github:"https://github.com/zahego/",linkedIn:"https://www.linkedin.com/in/minh-tran-302590139/",email:"tug70814@temple.edu", codepen:"https://codepen.io/zahego"}
+  ],
+  links:{github:"https://github.com/zahego/",linkedIn:"https://www.linkedin.com/in/minh-tran-302590139/",email:"tug70814@temple.edu", codepen:"https://codepen.io/zahego", connectionpic:require('./Resources/connection.png'),}
 };
 
 
@@ -96,9 +95,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="app-body">
-        <Navbar />
+        <Navbar nlogo={database.piclogo}/>
         <div className="content">
-          <Landing ldname={database.fullname} ldtitle={database.title} ldquote={database.quote} ldpic='./Resources/edgy.png'/>
+          <Landing ldname={database.fullname} ldtitle={database.title} ldquote={database.quote} ldbackground={database.background}/>
           <QuickSummary qsname={database.firstName} qstitle={database.title} qspic={database.piclogo}/>
           <Skill sskill1={database.skill} sskill2={database.skill2} sskill3={database.skill3} />
           <Project pproject={database.project}/>

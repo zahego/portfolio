@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandPointDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-scroll";
+import Typical from 'react-typical';
 
 var flexContain = {
     flexDirection: 'row',
@@ -18,18 +19,19 @@ var flexElement = {
     alignItems: 'center',
 }
 
-export const Landing = ({ ldname, ldtitle, ldquote, ldpic }) => {
+export const Landing = ({ ldname, ldtitle, ldquote, ldbackground }) => {
     return (
         <div className="landing">
             <section>
                 {/*background image-banner */}
-                <div className="landing-bgImg" style={{ backgroundImage: `url(${require("../Resources/banner.png")})` }}></div>
+                <div className="landing-bgImg" style={{ backgroundImage: `url(${ldbackground})` }}></div>
 
                 {/*info-flex */}
                 <div style={flexContain}>
                     <div className="landing-text" style={flexElement}>
-                        {/*<img style={{backgroundImage:`url(${require("../Resources/edgy.png")})`}} alt="pic"></img>*/}
-                        <h1 style={{fontSize:"90px", margin:"0"}}>{ldname}</h1>
+                        <h1 style={{fontSize:"90px", margin:"0"}}>
+                        <Typical steps={[ldname, 3000, 'Yo!!', 500]} loop={Infinity}/>
+                        </h1>
                         <h3 style={{fontSize:"25px", margin:"0"}}>{ldtitle}</h3>
                         <p style={{textDecoration:"line-through", margin:"0", fontSize:"16"}}>{ldquote.jokeQuote}</p>
                         <p style={{ margin:"0", fontSize:"16"}}>"{ldquote.trueQuote}"-<b>King Tut</b></p>
@@ -44,7 +46,6 @@ export const Landing = ({ ldname, ldtitle, ldquote, ldpic }) => {
                 
                 </div>
             </section>
-            {/*audio */}
         </div>
 
     )
