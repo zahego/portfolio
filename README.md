@@ -26,10 +26,10 @@ If you don't have much time to develop a full portfolio yourself, this template 
 
 
 ### Prequesite
-npm installed for local running purpose  
-check out Node installation instruction [here](https://nodejs.org/en/)
-Netlify set up if you would like to continuous deploy and have an online hosting server
-check out Netlify instruction [here](https://www.netlify.com/)
+npm installed for local running purpose    
+check out Node installation instruction [here](https://nodejs.org/en/)  
+Netlify set up if you would like to continuous deploy and have an online hosting server  
+check out Netlify instruction [here](https://www.netlify.com/)  
 
 ### Installing and Running
 Clone the repo
