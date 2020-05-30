@@ -57,3 +57,5 @@ Minh Tran
 [react-typical](https://www.npmjs.com/package/react-typical) - Typewriter effect  
 [react-scroll](https://www.npmjs.com/package/react-scroll) - Scroll on link click animation  
 [react-font-awesome](https://github.com/FortAwesome/react-fontawesome) - Icons used  
+[Alan Ayala's portfolio](http://www.abwtechnologies.com/index.html) - Design inspiration. 
+His portfolio is really professional and strong so I copied most of the design from his page. (I did implement all the code by myself as he uses vanilla JS while I use React)
