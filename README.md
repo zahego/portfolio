@@ -56,6 +56,11 @@ all color scheme are located as css custom selector in src/App.css
 [react-scroll](https://www.npmjs.com/package/react-scroll) - Scroll on link click animation  
 [react-font-awesome](https://github.com/FortAwesome/react-fontawesome) - Icons used  
 
+### Some interesting issues along the way
+- managing state and props. This site was made before I knew about the existence of Redux so I pass props through layers of functions and class like a maniac  
+- can't pass in image and font awesome icon as string. I figure a work around is to pass the whole object of `require("image.jpg")` and it work. 
+- New trouble arise when I want to transfer all my data to a json file for better management as json only accept String key-value. I again work around this by using a regular js file instead of json.  
+- responsive design was a huge issue as I build it with a desktop-first mindset.
 
 ### Contributors
 Minh Tran 
