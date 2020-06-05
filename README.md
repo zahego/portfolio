@@ -36,6 +36,10 @@ Clone the repo
 ```
 git clone https://github.com/zahego/portfolio.git
 ```
+Run Node command to create node_modules folder, which hold all the necessary dependencies
+```
+npm install
+```
 Run Node command for local deployment
 ```
 npm start
@@ -48,14 +52,14 @@ all color scheme are located as css custom selector in src/App.css
 
 ### Built With
 [React](https://reactjs.org/)  
+[react-typical](https://www.npmjs.com/package/react-typical) - Typewriter effect  
+[react-scroll](https://www.npmjs.com/package/react-scroll) - Scroll on link click animation  
+[react-font-awesome](https://github.com/FortAwesome/react-fontawesome) - Icons used  
 
 
 ### Contributors
 Minh Tran 
 
 ### Acknowledgments
-[react-typical](https://www.npmjs.com/package/react-typical) - Typewriter effect  
-[react-scroll](https://www.npmjs.com/package/react-scroll) - Scroll on link click animation  
-[react-font-awesome](https://github.com/FortAwesome/react-fontawesome) - Icons used  
 [Alan Ayala's portfolio](http://www.abwtechnologies.com/index.html) - Design inspiration. 
 His portfolio is really professional and strong so I copied most of the design from his page. (I did implement all the code by myself as he uses vanilla JS while I use React)
