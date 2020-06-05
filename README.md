@@ -46,7 +46,7 @@ npm start
 ```
 
 ### Editing Content
-all personal information can be found in a variable called 'database', located inside src/App.js
+all personal information can be found in a variable called 'database', located inside src/database.js
 all pictures used are located in the src/Resources folder
 all color scheme are located as css custom selector in src/App.css
 
