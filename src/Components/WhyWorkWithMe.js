@@ -4,10 +4,11 @@ var flexContain = {
     flexDirection: 'row',
     display: "flex",
     justifyContent: 'space-evenly',
-    alignContent:"flex-end",
     flex: "1",
     flexBasis: "50px 50px",
-    height: "350px",
+    height: "100%",
+    flexWrap: "wrap",
+
 }
 var flexItems={
     textAlign:"center",
@@ -18,14 +19,15 @@ export const WhyWorkWithMe=({characteristic})=>{
     return(
         <div className="why-work-with-me">
             <section>
-                <div style={{paddingTop:"40px", paddingLeft:"20px"}}>
+                <div style={{paddingTop:"40px", paddingLeft:"20px"}} className="wow fadeInDown">
             <h1>Why work with me</h1>
+            <hr></hr>
             <p>There are many advantages when working with me, for I am</p>
             </div>
             <ul style={flexContain}>
                 {characteristic.map((c, id)=>{
                     return(
-                    <li key={id} style={flexItems}>
+                    <li key={id} style={flexItems} className="wow zoomIn">
                         <br />
                         <p><FontAwesomeIcon icon={c.icon} size="3x" /></p>
                         <br/>

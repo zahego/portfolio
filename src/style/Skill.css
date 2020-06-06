@@ -1,7 +1,8 @@
-.skill ul{
+.skill ul, .education ul{
     padding-left:20px;
+    
 }
-.skill li{
+.gridItems li{
     background-color:rgb(247, 184, 66);
     border: 1px solid rgb(185, 190, 190);
     color: rgb(114, 10, 10);
@@ -9,8 +10,12 @@
     text-align: center;
     width:200px;
     border-radius: 3px;
+    
 }
-.skill li:hover{
+.education .gridItems li{
+    display:inline-block;
+}
+.gridItems li:hover{
     background-color:var(--color-lighter);
     border: 1px solid rgb(114, 10, 10);
     color: rgb(223, 82, 0);
@@ -20,25 +25,52 @@
 }
 .gridContainer{
     display:grid;
-    grid-template-columns: 50% 44%;
-    grid-gap: 3em;
+    grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    justify-content: center;
+    
 }
+
 .gridMidContent{
     display:grid;
     grid-template-rows: 40% 40%;
     grid-row-gap: 3em;
     grid-auto-rows: minmax(100px, auto);
 }
-.gridItemsStyle1{
-    display:grid;
-    grid-template-columns: 33% 33% 33% ;
-    grid-row-gap: 1em;
-    grid-column-gap: 5px;
-}
 .gridItems{
     display:grid;
-    grid-template-columns: 33% 33% 33% ;
+    grid-template-columns: 33% 33% 33%;
     grid-row-gap: 1em;
     grid-column-gap: 5px;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+}
+.education .gridItems{
+    display:block;
+}
+
+@media(max-width: 1300px){
+    .gridContainer{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto;
+        grid-row-gap: 3em;
+    } 
+}
+
+/*have to put this later than the original design*/
+@media(max-width: 650px){
+    .gridItems{
+        grid-template-columns: 50% 50% ;
+    }
+}
+
+@media(max-width: 480px){
+    .gridItems{
+        grid-template-columns: auto;
+    }
+    .skill ul{
+        padding-left:0;
+    }
 }

@@ -13,69 +13,8 @@ import { Education } from './Components/Education';
 import { WhyWorkWithMe } from './Components/WhyWorkWithMe';
 import { ContactMe } from './Components/ContactMe';
 import { AboutMe } from './Components/AboutMe';
-import {
-  faUserFriends, faCheck,
-  faClipboard, faCalendarAlt, faCalculator,
-  faLock, faTape, faEdit,
-  faLayerGroup, faMagic, 
-  faArrowAltCircleUp, faFastForward, faArrowsAlt
-} from '@fortawesome/free-solid-svg-icons';
-import {
-  faHtml5, faCss3, faJs, faVuejs, faReact, faNodeJs,
-  faJava, faPython, faUnity, faAndroid, faMicrosoft,
-  faTrello, faArtstation, faAdobe, faGithub,
-  faInvision
-} from '@fortawesome/free-brands-svg-icons';
-
-
-
-let database = {
-  fullname: "Minh Tran",
-  firstName: "Minh",
-  title: "Full-stack software develper",
-  email: "tug70814@temple.edu",
-  address: "2238 N Park Ave, Philadelphia, PA, USA, 19132",
-  phone: "267-251-2752",
-  piclogo:require('./Resources/logo-brand.png'),
-  background:require('./Resources/banner.png'),
-  
-
-  quote: {jokeQuote:"If you can do Java,you can do Javscript. Believe in yourself or sth...",
-          trueQuote:"Society is ruled by one, but built by many."},
-  skill: [{ name: "HTML", icon: faHtml5 }, { name: "CSS", icon: faCss3 }, { name: "Javascript", icon: faJs },
-  { name: "Vue", icon: faVuejs }, { name: "React", icon: faReact }, { name: "Nodejs", icon: faNodeJs },
-  { name: "Struts2", icon: "" }, { name: "Spring MVC", icon: "" }, { name: "Hibernate", icon: "" },
-  { name: "JSP", icon: "" }, { name: "MySQL", icon: "" }, { name: "REST", icon: "" },
-  { name: "Apache", icon: "" }, { name: "Glassfish", icon: "" }, { name: "Tomcat", icon: "" },
-  { name: "Axure", icon: faLayerGroup }, { name: "InVision", icon: faInvision }, { name: "Adobe XD", icon: faAdobe },
-  { name: "UI/UX design", icon: faUserFriends }, { name: "Photoshop", icon: faMagic }, { name: "Selenium", icon: faCheck }],
-
-  skill2: [{ name: "Java", icon: faJava }, { name: "Python", icon: faPython }, { name: "C#", icon: "" },
-  { name: "Unity", icon: faUnity }, { name: "Android Studio", icon: faAndroid }, { name: "MS Threat Model", icon: faMicrosoft }],
-
-  skill3: [{ name: "Agile development", icon: faCalendarAlt }, { name: "Scrum", icon: faTrello }, { name: "Usability testing", icon: faClipboard },
-  { name: "Digital Art", icon: faArtstation }, { name: "Version Control", icon: faGithub }, { name: "Software Security", icon: faLock },
-  { name: "Software Testing", icon: faEdit }, { name: "Application Prototyping", icon: faTape }, { name: "MAchine learning", icon: faCalculator },],
-
-  characteristic: [{ icon: faArrowAltCircleUp,quality: "ambitious", des: "I'm not afraid to aim high. Everywhere I go, I would like to make myself known for being able to improve for the better." },
-  { icon: faFastForward,quality: "quick-learned", des: "I'm confident in my ability to catch up and reapply my understanding into the craft." },
-  { icon: faArrowsAlt ,quality: "adaptable", des: "I pride myself as someone who expand by generalization. I like to learn the new stacks and in the process of learning, I figure my ability to adapt could become of good use." }],
-  school: {
-    name: "Temple University", grad: "Dec 2020", location: "Philadelphia, PA, USA, 19122",
-    corsework: ["Data Structure and Algorithm", "Mobile Design and Prototype", "Web App Development",
-      "Mobile App Development", "Quality Assurance and Testing", "Software Design",
-      "Principles of Data Science", "Probability and Statistic", "Technical Writing",
-      "Final Project in Computer Science", "UI/UX design", "Software Security Development",
-      "Linear Algebra", "Calculus"]
-  },
-  project:[{desc: "A website I made with pure HTML, CSS and JS both front-end and back-end. I focus more on JS side.", visitlink: "http://cis-linux2.temple.edu:8080/SP20_3308_tug70814/", codelink: "https://github.com/zahego/Buggit", projectpic: require('./Resources/project1.png')},
-  {desc: "Another website I made with pure HTML, CSS and JS both front-end and back-end. I focus more on the minor details of JSP API.", visitlink: "http://cis-linux2.temple.edu:8080/FA18_3308_tug70814/", codelink: "https://github.com/zahego/SAD", projectpic: require('./Resources/project2.png')},
-  {desc: "A website made with Vue framework I learnt during a course at LinkedIn Learning", visitlink: "https://github.com/zahego/Vue101", codelink: "https://github.com/zahego/Vue101", projectpic: require('./Resources/project3.png')},
-  {desc: "A game I create with a team following Agile Development principle for Capstone class", visitlink: "https://github.com/Capstone-Projects-2019-Fall/GestureControlGame---MagicHands", codelink: "https://github.com/Capstone-Projects-2019-Fall/GestureControlGame---MagicHands", projectpic: require('./Resources/project4.png')},
-  ],
-  links:{github:"https://github.com/zahego/",linkedIn:"https://www.linkedin.com/in/minh-tran-302590139/",email:"tug70814@temple.edu", codepen:"https://codepen.io/zahego", connectionpic:require('./Resources/connection.png'),}
-};
-
+import WOW from 'wow.js';
+import {database} from "./database.js";
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -87,6 +26,7 @@ class App extends React.Component {
   componentDidMount() {
     window.onscroll = function () { myFunction() };
     console.log(database.links.github);
+    new WOW().init();
   }
   componentDidUpdate() {
     window.onscroll = function () { myFunction() };

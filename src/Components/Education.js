@@ -1,34 +1,26 @@
 import React from 'react';
-var flexContain1 = {
-    flexDirection: 'row',
-    display: "flex",
-    justifyContent: 'space-around',
-    flexWrap:"wrap",
-}
-var flexContain2 = {
-    flexDirection: 'row',
-    display: "flex",
-    justifyContent: 'space-between',
-    alignItems: 'flex-end',
-    flexWrap:"wrap",
-}
+
+
 export const Education=({eschool})=>{
     return(
         <div className="education" id="education">
             <section>
-                <div style={flexContain2}>
-                    <div style={{paddingLeft:"20px", paddingTop: "60px"}}>
+                <div className="flex-container">
+                    <div className="wow bounceInLeft">
             <h1>Education</h1>
+            <hr></hr>
             <h3>{eschool.name}</h3>
             <h5>{eschool.location}</h5>
             </div>
-            <img src={require('../Resources/temple.png')} style={{width:"400px", height:"100px", opacity:"0.5", paddingRight:"40px"}} alt="temple.png"></img>
+            <div className="wow bounceInRight">
+            <img src={require('../Resources/temple.png')} className="rightImage" style={{opacity:"0.5"}} alt="temple.png"></img>
+            </div>
             </div >
-            <div style={{ paddingTop: "60px"}}>
-            <ul style={flexContain1}>
+            <div style={{ paddingTop: "60px"}} className="wow fadeInUp">
+            <ul className="gridItems">
                 {eschool.corsework.map((c,id)=>{
                     return(
-                    <li key={id} style={{width:"300px"}}>{c}</li>
+                    <li key={id} ><h6>{c}</h6></li>
                     )
                 })}
             </ul>

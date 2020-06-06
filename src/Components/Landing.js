@@ -7,16 +7,8 @@ import Typical from 'react-typical';
 var flexContain = {
     flexDirection: 'row',
     justifyContent: 'center',
-    alignItems: 'center',
-    alignContent: 'center',
     display: "flex",
     height: "100vh",
-}
-var flexElement = {
-    display: "flex",
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
 }
 
 export const Landing = ({ ldname, ldtitle, ldquote, ldbackground }) => {
@@ -28,22 +20,24 @@ export const Landing = ({ ldname, ldtitle, ldquote, ldbackground }) => {
 
                 {/*info-flex */}
                 <div style={flexContain}>
-                    <div className="landing-text" style={flexElement}>
-                        <h1 style={{fontSize:"90px", margin:"0"}}>
-                        <Typical steps={[ldname, 3000, 'Yo!!', 500]} loop={Infinity}/>
+                    <div className="landing-text" id="landing-flex-item">
+                        <h1>
+                        <Typical steps={[ldname, 3000, 'Welcome!!', 500]} loop={Infinity} className="typical"/>
                         </h1>
-                        <h3 style={{fontSize:"25px", margin:"0"}}>{ldtitle}</h3>
-                        <p style={{textDecoration:"line-through", margin:"0", fontSize:"16"}}>{ldquote.jokeQuote}</p>
-                        <p style={{ margin:"0", fontSize:"16"}}>"{ldquote.trueQuote}"-<b>King Tut</b></p>
+                        <h3 className="wow bounceInDown">{ldtitle}</h3>
+                        <hr></hr>
+                        <p className="landing-p" style={{textDecoration:"line-through"}}>{ldquote.jokeQuote}</p>
+                        <p className="landing-p" >"{ldquote.trueQuote}"-<b>King Tut</b></p>
 
                     </div>
                 </div>
                 {/*a button to show you can scroll down*/}
                 <div className="bottomOfDiv" style={{cursor:"pointer"}}>
+                    <div className="wow flip">
                 <Link activeClass="active" to="skill" smooth={true} spy={true} offset={-70} duration={500}>
                 <FontAwesomeIcon icon={faHandPointDown} size="4x" className="fontAwesomeLanding" />
                 </Link>
-                
+                </div>
                 </div>
             </section>
         </div>

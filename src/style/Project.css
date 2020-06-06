@@ -4,26 +4,29 @@
     --height-desc:118px;
     --height-button:30px;
     --width:280px;
+    --height-modal: 300px;
+    --width-modal:440px;
 }
 .project-container{
-    height: var(--height);
-    width:  var(--width);
-    float: left;
+    min-height: var(--height);
+    min-width:  var(--width);
     background-color: var(--color-lighter);
     margin: 10px;
     position: relative;
     text-align: center;
-    border-right: 1px solid rgb(51, 19, 19);
-    border-left: 1px solid rgb(51, 19, 19);
+    border-right: 1px solid rgb(51, 19, 19, 0.5);
+    border-left: 1px solid rgb(51, 19, 19, 0.5);
+    
     
 }
 .project-container img{
     height: var(--height-image);
-    width: var(--width);
+    width: var(--width);  
 }
 .project-container p{
     margin: 0 0 0 0;
     height: var(--height-desc);
+    width: var(--width);
     
 }
 .project-container button{
@@ -36,6 +39,8 @@
     padding-bottom: 10px;
     display: inline-block;
     position: absolute;
+    border-right: 1px solid rgb(86,48,63, 0.5);
+    border-left: 1px solid rgb(86,48,63, 0.5);
   }
 
 .project-container .fontAwesomeEye{
@@ -45,4 +50,127 @@
     color: rgba(255, 255, 255, 0.705);
     /*visibility:hidden;*/
     
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    padding-top:50px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: var(--color-lighter);
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: var(--color-lighter);
+    position: absolute;
+    right: 10px;
+    
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header, .modal-footer {
+    padding-right: 10px;
+    background-color: rgb(158,91,27);
+    color: var(--color-lighter);
+    text-align: center;
+    
+  }
+  .modal-header h1{
+    margin-top:0;
+    padding-bottom: 16px;
+    
+
+  }
+  .modal-footer button{
+    left:0;
+    position: relative;
+  }
+  .modal-info{
+    overflow: auto;
+    height: 500px;
+  }
+  
+  .modal-body {
+    padding: 2px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+  }
+  .project-container .modal-body  img{
+    height: var(--height-modal);
+    width: var(--width-modal);
+}
+.project-container .modal-info p{
+    height: var(--height-image);
+    width: var(--width);
+}
+.project-container .modal-info-right p{
+  width: var(--width-modal);
+}
+@media(max-width:940px){
+  .modal{
+    padding-top:0;
+  }
+}
+@media(max-width:550px){
+  .project-container .modal-body  img{
+    height: var(--height-image);
+    width: var(--width);
+  }
+  
+}
+@media(max-width:450px){
+  .modal{
+    width:100vw;
+    top:0;
+  }
+  .modal-content{
+    width:100vw;
+  }
+  .modal-content h1{
+    font-size:30px;
+  }
+  
 }

@@ -1,29 +1,31 @@
 import React from 'react';
 import ProjectContainer from './Project-Container';
-var sectionStyle = {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    left:"5%",
-    position:"relative",
-    display: "flex",
-    flexWrap: 'wrap',
-    width: '80%',
-}
 
 export const Project=({pproject})=>{
     return(
         <div className="project" id="project">
             <section >
-                <div style={{paddingLeft:"20px", paddingTop:"20px"}}>
+                <div style={{paddingLeft:"20px", paddingTop:"20px"}} className="wow flash">
             <h1>My latest work</h1>
-            <h5>Some of my greatest and latest work</h5>
+            <hr></hr>
+            <h5>Some of my greatest and latest projects</h5>
             <p>Click on the project to see more info</p>
             </div>
-            <ul style={sectionStyle}>
+            <ul className="flex-container">
                 {pproject.map((p,id)=>{
                     return(
-                        <ProjectContainer pjcdesc={p.desc} pjcvisitlink={p.visitlink} pjccodelink={p.codelink} pjcpic={p.projectpic} key={id}/>
+                        <ProjectContainer 
+                        pjcname={p.name} 
+                        pjcdesc={p.desc} 
+                        pjclongdes={p.longdes} 
+                        pjcproblem={p.problem} 
+                        pjcfix={p.fix} 
+                        pjcvisitlink={p.visitlink} 
+                        pjccodelink={p.codelink} 
+                        pjcpic={p.projectpic} 
+                        pjcstack={p.stack}
+                        pjcmodalId={id}
+                        key={id}/>
                     )
                 })}
             
