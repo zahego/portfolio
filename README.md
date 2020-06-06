@@ -1,68 +1,70 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Minh Tran Portfolio
+Personal portfolio template built with Reactjs
 
-## Available Scripts
 
-In the project directory, you can run:
+### Getting Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+If you don't have much time to develop a full portfolio yourself, this template is very ideal as you only need to edit the information stored within 1 file to change the content of the whole page. (be mindful that if you want to edit the design, you need the understanding of Reactjs and HTML/CSS/JS) and have to actually dwelve in the codes.
 
-### `yarn start`
+### Notable feature
+- Single Page Application
+- Easy to eit information and quick to run
+- Interactive design
+- Clear visual with UI/UX design that helps getting the important information out quickly
+- Responsive (coming soon)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Sections
+- Navigation bar (header)
+- Landing 
+- Quich Summary
+- Skill
+- Project
+- Education
+- Certificate (coming soon)
+- Why work with me
+- About me (footer)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+### Prequesite
+npm installed for local running purpose    
+check out Node installation instruction [here](https://nodejs.org/en/)  
+Netlify set up if you would like to continuous deploy and have an online hosting server  
+check out Netlify instruction [here](https://www.netlify.com/)  
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installing and Running
+Clone the repo
+```
+git clone https://github.com/zahego/portfolio.git
+```
+Run Node command to create node_modules folder, which hold all the necessary dependencies
+```
+npm install
+```
+Run Node command for local deployment
+```
+npm start
+```
 
-### `yarn build`
+### Editing Content
+all personal information can be found in a variable called 'database', located inside src/database.js
+all pictures used are located in the src/Resources folder
+all color scheme are located as css custom selector in src/App.css
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Built With
+[React](https://reactjs.org/)  
+[react-typical](https://www.npmjs.com/package/react-typical) - Typewriter effect  
+[react-scroll](https://www.npmjs.com/package/react-scroll) - Scroll on link click animation  
+[react-font-awesome](https://github.com/FortAwesome/react-fontawesome) - Icons used  
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Some interesting issues along the way
+- managing state and props. This site was made before I knew about the existence of Redux so I pass props through layers of functions and class like a maniac  
+- can't pass in image and font awesome icon as string. I figure a work around is to pass the whole object of `require("image.jpg")` and it work. 
+- New trouble arise when I want to transfer all my data to a json file for better management as json only accept String key-value. I again work around this by using a regular js file instead of json.  
+- responsive design was a huge issue as I build it with a desktop-first mindset.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Contributors
+Minh Tran 
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### Acknowledgments
+[Alan Ayala's portfolio](http://www.abwtechnologies.com/index.html) - Design inspiration. 
+His portfolio is really professional and strong so I copied most of the design from his page. (I did implement all the code by myself as he uses vanilla JS while I use React)
