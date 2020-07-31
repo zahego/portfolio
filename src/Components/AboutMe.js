@@ -8,7 +8,7 @@ export const AboutMe=({ablinks, abname, abfname, abtitle, abadress, abphone, abe
     return(
         <footer className="about-me" id="about-me">
             <div>
-                <div id="left-about-me" className="wow zoomInLeft">
+                <div id="left-about-me" className="wow fadeInUp">
             <h1>About {abfname}</h1>
             <hr></hr>
             <p>Hello there, my name is {abname}, and I'm a {abtitle}.</p>

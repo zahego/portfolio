@@ -7,14 +7,14 @@ export const Skill=({sskill1, sskill2, sskill3})=>{
     return(
         <div className="skill" id="skill">
             <section>
-                <div style={{paddingLeft:"20px", paddingTop: "40px"}} className="wow bounceIn">
+                <div style={{paddingLeft:"20px", paddingTop: "40px"}} className="wow fadeInUp">
             <h1>My skill stack</h1>
             <hr></hr>
             <p>I love to learn new technologies. Especially the one's that manke your company special</p>
             </div>
 
             <div className="gridContainer">
-            <div className="wow bounceIn">
+            <div className="wow fadeInUp">
             <h3>Web stack</h3>
             <hr></hr>
             <ul className="gridItems">
@@ -35,7 +35,7 @@ export const Skill=({sskill1, sskill2, sskill3})=>{
             </div>
 
             <div className="gridMidContent">
-                <div className="wow bounceIn">
+                <div className="wow fadeInUp">
             <h3>Software stack</h3>
             <hr></hr>
             <ul className="gridItems">
@@ -55,7 +55,7 @@ export const Skill=({sskill1, sskill2, sskill3})=>{
 
             </ul>
             </div>
-            <div className="wow bounceIn">
+            <div className="wow fadeInUp">
             <h3>Softskill</h3>
             <hr></hr>
             <ul className="gridItems">

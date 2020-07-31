@@ -5,7 +5,7 @@ export const QuickSummary = ({ qsname, qstitle, qspic }) => {
         <div className="quick-summary">
             <section>
                 <div className="flex-container">
-                    <div className="wow bounceInLeft">
+                    <div className="wow fadeInUp">
                         <h1>Who I am</h1>
                         <hr></hr>
                         <h5>Woah there!! My name is {qsname}. I am a {qstitle}.</h5>
@@ -13,7 +13,7 @@ export const QuickSummary = ({ qsname, qstitle, qspic }) => {
                         <a href="#about-me"><button>Learn more about me</button></a>
                         <a href="#project"><button>Check out my project</button></a>
                     </div>
-                    <div className="wow bounceInRight">
+                    <div className="wow fadeInUp">
                     <img src={qspic} className="rightImage" alt="logo-brand.png" />
                     </div>
                 </div>

@@ -44,11 +44,11 @@ class ProjectContainer extends React.Component {
                 pjmmodalId={this.state.modalId}/>
                 <Link activeClass="active" to="project" smooth={true} spy={true} offset={-70} duration={500}>
                 <div className="imageHandler" onMouseOver={this.onHoverImg} onMouseOut={this.onHoverImg} onClick={this.onClickOpenModal}>
-                    <img src={this.props.pjcpic} alt="so long" style={{ opacity: this.state.hid ? 1 : 0.2 }} className="wow bounceIn"></img>
+                    <img src={this.props.pjcpic} alt="so long" style={{ opacity: this.state.hid ? 1 : 0.2 }} ></img>
                     <FontAwesomeIcon icon={faEye} size="5x" className="fontAwesomeEye" style={{ visibility: this.state.hid ? "hidden" : "visible" }} />
                 </div>
                 </Link>
-                <div className="wow bounceInUp">
+                <div className="project-container-p">
                 <p>{this.props.pjcdesc}</p>
                 <a href={this.props.pjcvisitlink} onMouseOver={this.onHoverButton} onMouseOut={this.onHoverButton} >
                     <button style={{ left: "0" }}>

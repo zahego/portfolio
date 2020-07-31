@@ -25,7 +25,6 @@ function myFunction() {
 class App extends React.Component {
   componentDidMount() {
     window.onscroll = function () { myFunction() };
-    console.log(database.links.github);
     new WOW().init();
   }
   componentDidUpdate() {

@@ -19,7 +19,7 @@ export const WhyWorkWithMe=({characteristic})=>{
     return(
         <div className="why-work-with-me">
             <section>
-                <div style={{paddingTop:"40px", paddingLeft:"20px"}} className="wow fadeInDown">
+                <div style={{paddingTop:"40px", paddingLeft:"20px"}} className="wow fadeInUp">
             <h1>Why work with me</h1>
             <hr></hr>
             <p>There are many advantages when working with me, for I am</p>
@@ -27,7 +27,7 @@ export const WhyWorkWithMe=({characteristic})=>{
             <ul style={flexContain}>
                 {characteristic.map((c, id)=>{
                     return(
-                    <li key={id} style={flexItems} className="wow zoomIn">
+                    <li key={id} style={flexItems} className="wow fadeInUp">
                         <br />
                         <p><FontAwesomeIcon icon={c.icon} size="3x" /></p>
                         <br/>

@@ -144,6 +144,17 @@ export const database = {
         projectpic: require('./Resources/project7.png'),
         stack: "React, react-router Socket.io, queryString, Nodejs and Expressjs, Heroku server, Netlify host",
     },
+    {
+        name: "Bug Tracker 3000",
+        desc: "A full-fledge Java bug tracking application done within 1 month with a group of 3 people.",
+        longdes: "As my initial programming language is Java, I want to take the opportunity to try out the full potential of java for once. The program contains thorough bug tracking functionality when working in a team, including create bug task, moving, updating, deleting. Also there's different functionality for different user roles and an email system that will send email with JavaMail.jar. More info can be found here: https://github.com/zahego/bug-tracker",
+        problem: "There are a lot of problems when developing the apps, and we continuously note down then resolve it one by one. One of the most prominent problem is the integration and output into executable file for other people to test it. While netbean display the program with a decent UI porportion regarding the screen, the executable file was somehow get zoomed in and many UI element was lost.",
+        fix: "In the end, I found that my screen resolution is not the same as the normal resolution used in netbean. There's no way around it besides redo the whole UI system and put constrains in so that the UI will render well in most scenario. At least now I see the benefit both java and javascript regarding UI rendering.",
+        visitlink: "https://github.com/zahego/bug-tracker",
+        codelink: "https://github.com/zahego/bug-tracker",
+        projectpic: require('./Resources/project8.png'),
+        stack: "Java, javax.mail.jar, JPlanner.jar, json-simple-1.1.1.jar, commons-lang3-3.10.jar",
+    }
     ],
     links: {
         github: "https://github.com/zahego/",

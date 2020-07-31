@@ -6,13 +6,13 @@ export const Education=({eschool})=>{
         <div className="education" id="education">
             <section>
                 <div className="flex-container">
-                    <div className="wow bounceInLeft">
+                    <div className="wow fadeInUp">
             <h1>Education</h1>
             <hr></hr>
             <h3>{eschool.name}</h3>
             <h5>{eschool.location}</h5>
             </div>
-            <div className="wow bounceInRight">
+            <div className="wow fadeInUp">
             <img src={require('../Resources/temple.png')} className="rightImage" style={{opacity:"0.5"}} alt="temple.png"></img>
             </div>
             </div >

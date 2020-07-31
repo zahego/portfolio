@@ -23,7 +23,7 @@
     height: var(--height-image);
     width: var(--width);  
 }
-.project-container p{
+.project-container .project-container-p p{
     margin: 0 0 0 0;
     height: var(--height-desc);
     width: var(--width);
@@ -128,22 +128,22 @@
   }
   .modal-info{
     overflow: auto;
-    height: 500px;
+    height: 400px;
   }
   
   .modal-body {
-    padding: 2px 16px;
+    padding: 16px 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
+    /*flex-wrap: wrap-reverse;*/
   }
   .project-container .modal-body  img{
     height: var(--height-modal);
     width: var(--width-modal);
 }
 .project-container .modal-info p{
-    height: var(--height-image);
+    /*height: 300px;*/
     width: var(--width);
 }
 .project-container .modal-info-right p{

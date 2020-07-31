@@ -8,7 +8,7 @@ export const ContactMe=({cmlinks})=>{
         <div className="contact-me" id="contact-me">
             <section>
                 <div className="flex-container">
-                <div className="wow zoomInLeft">
+                <div className="wow fadeInUp">
             <h1>Connect with me:</h1>
             <hr></hr>
             <p>You can connect with me through these medium:</p>
@@ -19,7 +19,7 @@ export const ContactMe=({cmlinks})=>{
             <a href={cmlinks.codepen}><button><FontAwesomeIcon icon={faCodepen} size="2x" className="fontAwesome"/></button></a>
             </div>
             </div >
-            <div className="wow zoomInRight"> 
+            <div className="wow fadeInUp"> 
             <img src={cmlinks.connectionpic} className="rightImage" style={{opacity:"0.5"}} alt="contact.png"></img>
             </div>
             </div>
