@@ -3,7 +3,8 @@ import {
     faClipboard, faCalendarAlt, faCalculator,
     faLock, faTape, faEdit,
     faLayerGroup, faMagic,
-    faArrowAltCircleUp, faFastForward, faArrowsAlt
+    faArrowAltCircleUp, faFastForward, faArrowsAlt,
+    faTableTennis
 } from '@fortawesome/free-solid-svg-icons';
 import {
     faHtml5, faCss3, faJs, faVuejs, faReact, faNodeJs,
@@ -18,12 +19,16 @@ export const database = {
     firstName: "Minh",
     title: "Full-stack software developer",
     email: "tug70814@temple.edu",
-    address: "2238 N Park Ave, Philadelphia, PA, USA, 19132",
+    address: "125 Nautical Cove, Stafford, VA, USA, 22554",
     phone: "267-251-2752",
     piclogo: require('./Resources/logo-brand.png'),
     background: require('./Resources/banner.png'),
-
-
+    line0: "My focus is on Software Development, Web Development and problems solving in general.",
+    line1: "I studied Bachelor of Computer Science at Temple University and is doing many lessons on LinkedIn Learning, Youtube, and other online programming courses.",
+    line2: "I tend to code all my projects from scratch. This both delivers an unique experience as well as helps me thoroughly understand my stacks arsenal.",
+    line3: "I enjoy doing Web Development and Digital Art on my free time. Check out my art portfolio: https://tug70814.wixsite.com/mysite",
+    line4: "",
+    picGoodAt: faTableTennis,
     quote: {
         jokeQuote: "If you can do Java,you can do Javscript. Believe in yourself or sth...",
         trueQuote: "Society is ruled by one, but built by many."
@@ -59,7 +64,11 @@ export const database = {
         des: "I pride myself as someone who expand by generalization. I like to learn the new stacks and in the process of learning, I figure my ability to adapt could become of good use."
     }],
     school: {
-        name: "Temple University", grad: "Dec 2020", location: "Philadelphia, PA, USA, 19122", major: "Bachelor of Computer Science",
+        name: "Temple University",
+        grad: "Graduate: Aug 2020",
+        location: "Philadelphia, PA, USA, 19122",
+        major: "Bachelor of Computer Science",
+        schoolLogo: require('./Resources/temple.png'),
         corsework: ["Data Structure and Algorithm", "Mobile Design and Prototype", "Web App Development",
             "Mobile App Development", "Quality Assurance and Testing", "Software Design",
             "Principles of Data Science", "Probability and Statistic", "Technical Writing",
@@ -162,6 +171,5 @@ export const database = {
         email: "tug70814@temple.edu",
         codepen: "https://codepen.io/zahego",
         connectionpic: require('./Resources/connection.png'),
-
     }
 }
