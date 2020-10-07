@@ -1,14 +1,11 @@
-.skill ul, .education ul{
-    padding-left:20px;
-    
-}
+
 .gridItems li{
-    background-color:rgb(247, 184, 66);
+    background-color:rgb(245, 138, 76);
     border: 1px solid rgb(185, 190, 190);
     color: rgb(114, 10, 10);
     padding: 10px 5px;
     text-align: center;
-    width:200px;
+    width:180px;
     border-radius: 3px;
     
 }
@@ -28,7 +25,7 @@
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: minmax(100px, auto);
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     
 }
 
@@ -49,6 +46,9 @@
 }
 .education .gridItems{
     display:block;
+}
+.software-dev{
+    padding-top:10px;
 }
 
 @media(max-width: 1300px){

@@ -4,7 +4,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {faGithubAlt, faLinkedin, faCodepen} from '@fortawesome/free-brands-svg-icons';
 
 
-export const AboutMe=({ablinks, abname, abfname, abtitle, abadress, abphone, abemail, abline0, abline1, abline2, abline3, abPicGoodAt})=>{
+export const AboutMe=({ablinks, abname, abfname, abtitle, abadress, abphone, abemail, abline0, abline1, abline2, abline3, abline4, abPicGoodAt})=>{
     return(
         <footer className="about-me" id="about-me">
             <div>
@@ -17,6 +17,7 @@ export const AboutMe=({ablinks, abname, abfname, abtitle, abadress, abphone, abe
             <p>{abline1}</p>
             <p>{abline2}</p>
             <p>{abline3}</p>
+            <a href={abline4}>{abline4}</a>
             <p>I am also pretty good at <FontAwesomeIcon icon={abPicGoodAt} size="1x" className="fontAwesome"/></p>
             <div className="contact-buttons">
             <a href={ablinks.github}><button><FontAwesomeIcon icon={faGithubAlt} size="2x" className="fontAwesome"/></button></a>
@@ -27,7 +28,7 @@ export const AboutMe=({ablinks, abname, abfname, abtitle, abadress, abphone, abe
             <div style={{paddingBottom:"60px", paddingTop:"0", paddingLeft:"0"}}>
             <p>Adress: {abadress}</p>
             <p>Phone: {abphone}</p>
-            <p>Email: {abemail}</p>
+            <p>Email: <a href={abemail}> {abemail}</a></p>
             </div>
             </div>
             <div className="bottomOfDiv" id="bottomDivForText">

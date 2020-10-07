@@ -2,14 +2,14 @@
   --color-primary-bold: rgb(86,48,63);
   --color-primary: rgb(216,120,159);
   --color-whitey: rgb(241, 236, 240);
-  --color-secondary: rgb(247, 184, 66);
-  --color-secondary-light: rgb(240, 162, 16, 0.5);
+  --color-secondary: rgb(248, 171, 28);
+  --color-secondary-light: rgba(197, 134, 16, 0.5);
 
-  --color-primary-sub: rgb(182, 57, 35);
+  --color-primary-sub: rgb(170, 43, 20);
   --color-dark: rgb(60,41,41);
   --color-darker: rgb(15,13,13);
-  --color-light: rgb(218, 186, 145);
-  --color-lighter: rgb(230, 226, 223);
+  --color-light: rgb(233, 184, 165);
+  --color-lighter: rgb(241, 239, 237);
 
   --color-paragraph-primary: rgb(184, 24, 3);
   --color-button-primary: rgb(224, 104, 34);

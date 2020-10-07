@@ -1,16 +1,16 @@
 import {
-    faUserFriends, faCheck,
+    faCheck,
     faClipboard, faCalendarAlt, faCalculator,
     faLock, faTape, faEdit,
-    faLayerGroup, faMagic,
+    faLayerGroup, faMagic, faSubway,
     faArrowAltCircleUp, faFastForward, faArrowsAlt,
-    faTableTennis
+    faTableTennis, faCloud, faFire
 } from '@fortawesome/free-solid-svg-icons';
 import {
     faHtml5, faCss3, faJs, faVuejs, faReact, faNodeJs,
     faJava, faPython, faUnity, faAndroid, faMicrosoft,
     faTrello, faArtstation, faAdobe, faGithub,
-    faInvision
+    faInvision, faCuttlefish
 } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -19,15 +19,15 @@ export const database = {
     firstName: "Minh",
     title: "Full-stack software developer",
     email: "tug70814@temple.edu",
-    address: "125 Nautical Cove, Stafford, VA, USA, 22554",
+    address: "1311 I street Ne, Washington, DC, USA, 20002",
     phone: "267-251-2752",
     piclogo: require('./Resources/logo-brand.png'),
     background: require('./Resources/banner.png'),
     line0: "My focus is on Software Development, Web Development and problems solving in general.",
     line1: "I studied Bachelor of Computer Science at Temple University and is doing many lessons on LinkedIn Learning, Youtube, and other online programming courses.",
     line2: "I tend to code all my projects from scratch. This both delivers an unique experience as well as helps me thoroughly understand my stacks arsenal.",
-    line3: "I enjoy doing Web Development and Digital Art on my free time. Check out my art portfolio: https://tug70814.wixsite.com/mysite",
-    line4: "",
+    line3: "I enjoy doing Web Development and Digital Art on my free time. Check out my art portfolio: ",
+    line4: "https://tug70814.wixsite.com/mysite",
     picGoodAt: faTableTennis,
     quote: {
         jokeQuote: "If you can do Java,you can do Javscript. Believe in yourself or sth...",
@@ -39,7 +39,8 @@ export const database = {
     { name: "JSP", icon: "" }, { name: "MySQL", icon: "" }, { name: "REST", icon: "" },
     { name: "Apache", icon: "" }, { name: "Glassfish", icon: "" }, { name: "Tomcat", icon: "" },
     { name: "Axure", icon: faLayerGroup }, { name: "InVision", icon: faInvision }, { name: "Adobe XD", icon: faAdobe },
-    { name: "UI/UX design", icon: faUserFriends }, { name: "Photoshop", icon: faMagic }, { name: "Selenium", icon: faCheck }],
+    { name: "Ruby on Rails", icon: faSubway }, { name: "Photoshop", icon: faMagic }, { name: "Selenium", icon: faCheck },
+    { name: "Asp.Net", icon: faCuttlefish }, { name: "Azure", icon: faCloud }, { name: "Firebase", icon: faFire }],
 
     skill2: [{ name: "Java", icon: faJava }, { name: "Python", icon: faPython }, { name: "C#", icon: "" },
     { name: "Unity", icon: faUnity }, { name: "Android Studio", icon: faAndroid }, { name: "MS Threat Model", icon: faMicrosoft }],

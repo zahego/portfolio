@@ -28,7 +28,7 @@
      margin:0;
   }
   .landing .typical{
-    color: rgb(247,184,66);
+    color: rgb(247, 190, 66);
   }
   .landing .landing-text h3{
     font-size:25px;
@@ -64,4 +64,3 @@
       background-size: 300vw 100vh;
     }
   }
-  /*rgb(76,73,71)*/

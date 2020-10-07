@@ -45,7 +45,7 @@ class App extends React.Component {
           <ContactMe cmlinks={database.links}/>
           <AboutMe ablinks={database.links} abname={database.fullname} abfname={database.firstName} abtitle={database.title}
             abadress={database.address} abphone={database.phone} abemail={database.email} abPicGoodAt={database.picGoodAt}
-            abline0={database.line0} abline1={database.line1} abline2={database.line2} abline3={database.line3}/>
+            abline0={database.line0} abline1={database.line1} abline2={database.line2} abline3={database.line3} abline4={database.line4}/>
         </div>
       </div>
     );
