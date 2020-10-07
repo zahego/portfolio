@@ -2,6 +2,11 @@
 [https://zahego-tech-portfolio.netlify.app/index.html](https://zahego-tech-portfolio.netlify.app/index.html)
 Personal portfolio built with Reactjs. Site is build with attempt to make changing personal information become as least cumbersome as possible.
 
+## Site Images
+![Landing](https://github.com/zahego/portfolio/blob/master/src/Resources/screenshot/Untitled.png)
+![Skill](https://github.com/zahego/portfolio/blob/master/src/Resources/screenshot/Untitled2.png)
+![Projects](https://github.com/zahego/portfolio/blob/master/src/Resources/screenshot/Untitled3.png)
+
 ## Motivation
 Highly motivated to create this portfolio after checkout the portfolio of Alan Aya. His portfolio is bery professional, with slick color scheme, responsive design and informative. I "stole" most of his design and revamped it to suit my need. I still created everything from scratch with React though. It's like a famous artist once said: 
 >Good artist borrows, great artist steals
@@ -33,7 +38,7 @@ If you don't have much time to develop a full portfolio yourself, this template 
 - About me (footer)
 
 
-## Prequesite
+## Prerequisite
 Nodejs installed for local running purpose    
 check out Node installation instruction [here](https://nodejs.org/en/)  
 Netlify set up if you would like to continuous deploy and have an online hosting server  
